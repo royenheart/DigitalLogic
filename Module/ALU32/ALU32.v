@@ -40,28 +40,44 @@ module ALU32(
     assign Can[4] = Out[4] & {32{Dout[4]}};
     assign Cout = Can[0] | Can[1] | Can[2] | Can[3] | Can[4];
     
-    Decoder32 uut0 (
+    // 解码器 //
+
+    Decoder32 uut_dec (
         A[0],A[1],A[2],Dout
     );
 
-    Xor32 uut1 (
+    // 解码器 //
+
+    // 逻辑单元 //
+
+    //// 与运算32位 ////
+    And32 uut_and (
         In1,In2,Out[0]
     );
     
-    FullAdder32 uut2 (
-        In1,In2,CI,Out[1],CO
+    //// 或运算32位 ////
+    Or32 uut_or (
+        In1,In2,Out[1]
     );
-    
-    And32 uut3 (
+
+    //// 异或运算32位 ////
+    Xor32 uut_xor (
         In1,In2,Out[2]
     );
-    
-    Or32 uut4 (
-        In1,In2,Out[3]
+
+    //// 输入1运算32位 ////
+    Not32 uut_not (
+        In1,Out[3]
+    );
+
+    // 逻辑单元 //
+
+    // 超前进位加法器32位 //
+
+    FullAdder32 uut_fadder32 (
+        In1,In2,CI,Out[4],CO
     );
     
-    Not32 uut5 (
-        In1,Out[4]
-    );
+    // 超前进位加法器32位 //
 
 endmodule
