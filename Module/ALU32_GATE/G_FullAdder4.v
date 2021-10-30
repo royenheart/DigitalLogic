@@ -1,0 +1,65 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 2021/10/29 01:44:46
+// Design Name: 
+// Module Name: ALU32
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////
+
+module G_FullAdder4(
+        input wire [3:0]    In1,
+        input wire [3:0]    In2,
+        input wire          CI,
+        output wire [3:0]   Out,
+        output wire         CO
+    );
+
+    wire [3:0]     Gi;
+    wire [3:0]     Pi;
+    wire [3:0]     COi;
+    wire [9:0]     CoElement;
+
+    genvar        i ;
+    generate
+        for(i = 0; i <= 3; i = i + 1)
+        begin: GP_GEN
+            and andGi   (Gi[i],In1[i],In2[i]);
+            and andPi   (Pi[i],In1[i],In2[i]);
+        end
+    endgenerate
+
+    and andCoE0 (CoElement[0],CI,Pi[0]);
+    and andCoE1 (CoElement[1],Pi[1],Gi[0]);
+    and andCoE2 (CoElement[2],CI,Pi[1:0]);
+    and andCoE3 (CoElement[3],Pi[2],Gi[1]);
+    and andCoE4 (CoElement[4],Pi[2:1],Gi[0]);
+    and andCoE5 (CoElement[5],CI,Pi[2:0]);
+    and andCoE6 (CoElement[6],Pi[3],Gi[2]);
+    and andCoE7 (CoElement[7],Pi[3:2],Gi[1]);
+    and andCoE8 (CoElement[8],Pi[3:1],Gi[0]);
+    and andCoE9 (CoElement[9],CI,Pi[3:0]);
+
+    or orC1     (COi[0],Gi[0],CoElement[0]);
+    or orC2     (COi[1],Gi[1],CoElement[2:1]);
+    or orC3     (COi[2],Gi[2],CoElement[5:3]);
+    or orC4     (CO,Gi[3],CoElement[9:6]);
+
+    xor out1    (Out[0],In1[0],In2[0],CI);
+    xor out2    (Out[1],In1[1],In2[1],COi[0]);
+    xor out3    (Out[2],In1[2],In2[2],COi[1]);
+    xor out4    (Out[3],In1[3],In2[3],COi[2]);
+
+endmodule

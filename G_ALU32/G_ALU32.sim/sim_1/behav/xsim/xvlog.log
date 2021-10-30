@@ -1,0 +1,18 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/Module/ALU32_GATE/G_ALU32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module G_ALU32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/Module/ALU32_GATE/G_And32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module G_And32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/Module/ALU32_GATE/G_Decoder32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module G_Decoder32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/Module/ALU32_GATE/G_FullAdder32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module G_FullAdder32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/Module/ALU32_GATE/G_FullAdder4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module G_FullAdder4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/Module/ALU32_GATE/G_Not32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module G_Not32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/Module/ALU32_GATE/G_Or32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module G_Or32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/Module/ALU32_GATE/G_Xor32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module G_Xor32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/Sim/ALU32_GATE/G_ALU32_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module G_ALU32_TB

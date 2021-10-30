@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/Module/ALU32/Xor32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Xor32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/Sim/ALU32/Xor32_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Xor32_TB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/ALU32/ALU32.sim/SimXor/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

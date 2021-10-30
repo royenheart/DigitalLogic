@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Fri Oct 29 14:27:10 2021
+# Process ID: 23004
+# Current directory: D:/DigtalLogic/ALU32/ALU32.runs/synth_1
+# Command line: vivado.exe -log ALU32.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ALU32.tcl
+# Log file: D:/DigtalLogic/ALU32/ALU32.runs/synth_1/ALU32.vds
+# Journal file: D:/DigtalLogic/ALU32/ALU32.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ALU32.tcl -notrace

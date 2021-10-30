@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../Module/ALU32/ALU32.v" \
+"../../../../../Module/ALU32/And32.v" \
+"../../../../../Module/ALU32/Decoder32.v" \
+"../../../../../Module/ALU32/FullAdder32.v" \
+"../../../../../Module/ALU32/Not32.v" \
+"../../../../../Module/ALU32/Or32.v" \
+"../../../../../Module/ALU32/Xor32.v" \
+"../../../../../Sim/ALU32/ALU32_TB.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

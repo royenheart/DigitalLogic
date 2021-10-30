@@ -1,0 +1,14 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+D:/DigtalLogic/G_ALU32/G_ALU32.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,,,,,,,
+D:/DigtalLogic/Module/ALU32_GATE/G_ALU32.v,1635582582,verilog,,D:/DigtalLogic/Module/ALU32_GATE/G_And32.v,,G_ALU32,,,,,,,,
+D:/DigtalLogic/Module/ALU32_GATE/G_And32.v,1635572126,verilog,,D:/DigtalLogic/Module/ALU32_GATE/G_Decoder32.v,,G_And32,,,,,,,,
+D:/DigtalLogic/Module/ALU32_GATE/G_Decoder32.v,1635570705,verilog,,D:/DigtalLogic/Module/ALU32_GATE/G_FullAdder32.v,,G_Decoder32,,,,,,,,
+D:/DigtalLogic/Module/ALU32_GATE/G_FullAdder32.v,1635572990,verilog,,D:/DigtalLogic/Module/ALU32_GATE/G_FullAdder4.v,,G_FullAdder32,,,,,,,,
+D:/DigtalLogic/Module/ALU32_GATE/G_FullAdder4.v,1635580120,verilog,,D:/DigtalLogic/Module/ALU32_GATE/G_Not32.v,,G_FullAdder4,,,,,,,,
+D:/DigtalLogic/Module/ALU32_GATE/G_Not32.v,1635572535,verilog,,D:/DigtalLogic/Module/ALU32_GATE/G_Or32.v,,G_Not32,,,,,,,,
+D:/DigtalLogic/Module/ALU32_GATE/G_Or32.v,1635561021,verilog,,D:/DigtalLogic/Module/ALU32_GATE/G_Xor32.v,,G_Or32,,,,,,,,
+D:/DigtalLogic/Module/ALU32_GATE/G_Xor32.v,1635561008,verilog,,D:/DigtalLogic/Sim/ALU32_GATE/G_ALU32_TB.v,,G_Xor32,,,,,,,,
+D:/DigtalLogic/Sim/ALU32_GATE/G_ALU32_TB.v,1635571033,verilog,,,,G_ALU32_TB,,,,,,,,
