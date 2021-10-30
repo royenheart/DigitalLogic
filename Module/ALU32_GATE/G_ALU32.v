@@ -29,7 +29,7 @@ module G_ALU32(
     );
 
     wire [31:0] Out[7:0];
-    wire [7:0]  Dout;
+    wire [7:0]  Dout; // Decoder out
     wire [31:0] Can[7:0];
 
     // genvar        i ;
@@ -47,10 +47,6 @@ module G_ALU32(
     //         or  cout (Cout[i],Can[0][i],Can[1][i],Can[2][i],Can[3][i],Can[4][i]);
     //     end
     // endgenerate
-
-    // and (Can[0][0])
-
-    // or  (Cout,Can[0],Can[1],Can[1],Can[1],Can[1],Can[1])
 
     G_Decoder32 uut0 (
         A[0],A[1],A[2],Dout

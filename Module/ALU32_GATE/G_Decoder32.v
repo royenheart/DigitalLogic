@@ -28,9 +28,13 @@ module G_Decoder32(
 
     wire A0Not,A1Not,A2Not;
 
+    // Calculate ~A
+
     not notA0 (A0Not,A0);
     not notA1 (A1Not,A1);
     not notA2 (A2Not,A2);
+
+    // Calculate Out
 
     and and0  (Out[0],A0Not,A1Not,A2Not);
     and and1  (Out[1],A0,A1Not,A2Not);

@@ -19,6 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
+// 4位超前进位加法器
 module G_FullAdder4(
         input wire [3:0]    In1,
         input wire [3:0]    In2,
@@ -32,14 +33,25 @@ module G_FullAdder4(
     wire [3:0]     COi;
     wire [9:0]     CoElement;
 
-    genvar        i ;
-    generate
-        for(i = 0; i <= 3; i = i + 1)
-        begin: GP_GEN
-            and andGi   (Gi[i],In1[i],In2[i]);
-            and andPi   (Pi[i],In1[i],In2[i]);
-        end
-    endgenerate
+    // genvar        i ;
+    // generate
+    //     for(i = 0; i <= 3; i = i + 1)
+    //     begin: GP_GEN
+    //         and andGi   (Gi[i],In1[i],In2[i]);
+    //         and andPi   (Pi[i],In1[i],In2[i]);
+    //     end
+    // endgenerate
+
+    // Calculate Gi / Pi
+
+    and (Gi[0],In1[0],In2[0]);
+    and (Pi[0],In1[0],In2[0]);
+    and (Gi[1],In1[1],In2[1]);
+    and (Pi[1],In1[1],In2[1]);
+    and (Gi[2],In1[2],In2[2]);
+    and (Pi[2],In1[2],In2[2]);
+
+    // Calculate COi's or elements
 
     and andCoE0 (CoElement[0],CI,Pi[0]);
     and andCoE1 (CoElement[1],Pi[1],Gi[0]);
@@ -52,10 +64,14 @@ module G_FullAdder4(
     and andCoE8 (CoElement[8],Pi[3:1],Gi[0]);
     and andCoE9 (CoElement[9],CI,Pi[3:0]);
 
+    // Calculate COi
+
     or orC1     (COi[0],Gi[0],CoElement[0]);
     or orC2     (COi[1],Gi[1],CoElement[2:1]);
     or orC3     (COi[2],Gi[2],CoElement[5:3]);
     or orC4     (CO,Gi[3],CoElement[9:6]);
+
+    // Calculate Out
 
     xor out1    (Out[0],In1[0],In2[0],CI);
     xor out2    (Out[1],In1[1],In2[1],COi[0]);
