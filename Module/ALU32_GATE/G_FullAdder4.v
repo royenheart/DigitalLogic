@@ -24,6 +24,7 @@ module G_FullAdder4(
         input wire [3:0]    In1,
         input wire [3:0]    In2,
         input wire          CI,
+        input wire          Enable, // Enable Message, high as enable
         output wire [3:0]   Out,
         output wire         CO
     );
@@ -32,6 +33,8 @@ module G_FullAdder4(
     wire [3:0]     Pi;
     wire [3:0]     COi;
     wire [9:0]     CoElement;
+    wire [3:0]     OutTmp;
+    wire           COtmp;
 
     // genvar        i ;
     // generate
@@ -69,13 +72,21 @@ module G_FullAdder4(
     or orC1     (COi[0],Gi[0],CoElement[0]);
     or orC2     (COi[1],Gi[1],CoElement[2:1]);
     or orC3     (COi[2],Gi[2],CoElement[5:3]);
-    or orC4     (CO,Gi[3],CoElement[9:6]);
+    or orC4     (COtmp,Gi[3],CoElement[9:6]);
+    and         (CO,COtmp,Enable);
 
-    // Calculate Out
+    // Calculate Out with enable message
 
-    xor out1    (Out[0],In1[0],In2[0],CI);
-    xor out2    (Out[1],In1[1],In2[1],COi[0]);
-    xor out3    (Out[2],In1[2],In2[2],COi[1]);
-    xor out4    (Out[3],In1[3],In2[3],COi[2]);
+    xor out1    (OutTmp[0],In1[0],In2[0],CI);
+    xor out2    (OutTmp[1],In1[1],In2[1],COi[0]);
+    xor out3    (OutTmp[2],In1[2],In2[2],COi[1]);
+    xor out4    (OutTmp[3],In1[3],In2[3],COi[2]);
+
+    // And Enable Message
+
+    and         (Out[0],OutTmp[0],Enable);    
+    and         (Out[1],OutTmp[1],Enable);
+    and         (Out[2],OutTmp[2],Enable);
+    and         (Out[3],OutTmp[3],Enable);
 
 endmodule
