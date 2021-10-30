@@ -30,6 +30,7 @@ module G_FullAdder32(
     );
 
     wire [7:0]  COi;
+    wire [31:0] OutTmp;
 
     // 调用8次4位超前进位加法模块
 
@@ -37,9 +38,8 @@ module G_FullAdder32(
         .In1     (In1[3:0]),
         .In2     (In2[3:0]),
         .CI      (CI), 
-        .Enable  (Enable),
                 
-        .Out     (Out[3:0]),
+        .Out     (OutTmp[3:0]),
         .CO      (COi[0])
     );
 
@@ -47,9 +47,8 @@ module G_FullAdder32(
         .In1    (In1[7:4]),
         .In2    (In2[7:4]),
         .CI     (COi[0]),
-        .Enable  (Enable),
 
-        .Out    (Out[7:4]),
+        .Out    (OutTmp[7:4]),
         .CO     (COi[1])
     );
 
@@ -57,9 +56,8 @@ module G_FullAdder32(
         .In1     (In1[11:8]),
         .In2     (In2[11:8]),
         .CI      (COi[1]), 
-        .Enable  (Enable),
                 
-        .Out     (Out[11:8]),
+        .Out     (OutTmp[11:8]),
         .CO      (COi[2])
     );
 
@@ -67,9 +65,8 @@ module G_FullAdder32(
         .In1     (In1[15:12]),
         .In2     (In2[15:12]),
         .CI      (COi[2]), 
-        .Enable  (Enable),
                 
-        .Out     (Out[15:12]),
+        .Out     (OutTmp[15:12]),
         .CO      (COi[3])
     );
 
@@ -77,9 +74,8 @@ module G_FullAdder32(
         .In1     (In1[19:16]),
         .In2     (In2[19:16]),
         .CI      (COi[3]), 
-        .Enable  (Enable),
                 
-        .Out     (Out[19:16]),
+        .Out     (OutTmp[19:16]),
         .CO      (COi[4])
     );    
 
@@ -87,9 +83,8 @@ module G_FullAdder32(
         .In1     (In1[23:20]),
         .In2     (In2[23:20]),
         .CI      (COi[4]), 
-        .Enable  (Enable),
                 
-        .Out     (Out[23:20]),
+        .Out     (OutTmp[23:20]),
         .CO      (COi[5])
     );
 
@@ -97,9 +92,8 @@ module G_FullAdder32(
         .In1     (In1[27:24]),
         .In2     (In2[27:24]),
         .CI      (COi[5]), 
-        .Enable  (Enable),
                 
-        .Out     (Out[27:24]),
+        .Out     (OutTmp[27:24]),
         .CO      (COi[6])
     );
     
@@ -107,10 +101,46 @@ module G_FullAdder32(
         .In1     (In1[31:28]),
         .In2     (In2[31:28]),
         .CI      (COi[6]), 
-        .Enable  (Enable),
                 
-        .Out     (Out[31:28]),
-        .CO      (CO)
+        .Out     (OutTmp[31:28]),
+        .CO      (COi[7])
     );
+
+    buf     (CO,COi[7]);
+
+    // And Enable Message to Out
+
+    and     (Out[0],OutTmp[0],Enable);
+    and     (Out[1],OutTmp[1],Enable);
+    and     (Out[2],OutTmp[2],Enable);
+    and     (Out[3],OutTmp[3],Enable);
+    and     (Out[4],OutTmp[4],Enable);
+    and     (Out[5],OutTmp[5],Enable);
+    and     (Out[6],OutTmp[6],Enable);
+    and     (Out[7],OutTmp[7],Enable);
+    and     (Out[8],OutTmp[8],Enable);
+    and     (Out[9],OutTmp[9],Enable);
+    and     (Out[10],OutTmp[10],Enable);
+    and     (Out[11],OutTmp[11],Enable);
+    and     (Out[12],OutTmp[12],Enable);
+    and     (Out[13],OutTmp[13],Enable);
+    and     (Out[14],OutTmp[14],Enable);
+    and     (Out[15],OutTmp[15],Enable);
+    and     (Out[16],OutTmp[16],Enable);
+    and     (Out[17],OutTmp[17],Enable);
+    and     (Out[18],OutTmp[18],Enable);
+    and     (Out[19],OutTmp[19],Enable);
+    and     (Out[20],OutTmp[20],Enable);
+    and     (Out[21],OutTmp[21],Enable);
+    and     (Out[22],OutTmp[22],Enable);
+    and     (Out[23],OutTmp[23],Enable);
+    and     (Out[24],OutTmp[24],Enable);
+    and     (Out[25],OutTmp[25],Enable);
+    and     (Out[26],OutTmp[26],Enable);
+    and     (Out[27],OutTmp[27],Enable);
+    and     (Out[28],OutTmp[28],Enable);
+    and     (Out[29],OutTmp[29],Enable);
+    and     (Out[30],OutTmp[30],Enable);
+    and     (Out[31],OutTmp[31],Enable);
 
 endmodule

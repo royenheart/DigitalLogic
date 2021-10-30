@@ -30,6 +30,9 @@ module G_ALU32(
 
     wire [31:0] Out[7:0];
     wire [7:0]  Dout; // Decoder out
+    assign Out[5] = 32'd0;
+    assign Out[6] = 32'd0;
+    assign Out[7] = 32'd0;
 
     // genvar        i ;
     // genvar        j ;
@@ -47,53 +50,66 @@ module G_ALU32(
     //     end
     // endgenerate
 
-    G_Decoder32 uut0 (
-        .A0     (A[1]),
-        .A1     (A[2]),
-        .A2     (A[3]),
+    // 解码器 //
+
+    G_Decoder32 uut0_dec (
+        .A0     (A[0]),
+        .A1     (A[1]),
+        .A2     (A[2]),
         
         .Out    (Dout)
     );
 
-    G_Xor32 uut1 (
+    // 解码器 //
+
+    // 逻辑单元 //
+
+    //// 与 ////
+    G_And32 uut1_and (
         .In1    (In1),
         .In2    (In2),
         .Enable (Dout[0]),
 
         .Out    (Out[0])
     );
-    
-    G_FullAdder32 uut2 (
+
+    //// 或 ////
+    G_Or32 uut2_or (
         .In1    (In1),
         .In2    (In2),
-        .CI     (CI),
         .Enable (Dout[1]),
 
-        .Out    (Out[1]),
-        .CO     (CO)
+        .Out    (Out[1])
     );
     
-    G_And32 uut3 (
+    //// 异或 ////
+    G_Xor32 uut3_xor (
         .In1    (In1),
         .In2    (In2),
         .Enable (Dout[2]),
 
         .Out    (Out[2])
     );
-    
-    G_Or32 uut4 (
-        .In1    (In1),
-        .In2    (In2),
+
+    //// 非 //// 
+    G_Not32 uut4_not (
+        .In    (In1),
         .Enable (Dout[3]),
 
         .Out    (Out[3])
     );
+
+    // 逻辑单元 //
     
-    G_Not32 uut5 (
+    //// 32位超前进位 ////
+    G_FullAdder32 uut5_fadder32 (
         .In1    (In1),
+        .In2    (In2),
+        .CI     (CI),
         .Enable (Dout[4]),
 
-        .Out    (Out[4])
+        .Out    (Out[4]),
+        .CO     (CO)
     );
 
     // Final Output

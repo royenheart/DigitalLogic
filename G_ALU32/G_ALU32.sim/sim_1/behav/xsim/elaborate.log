@@ -4,9 +4,18 @@ Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 57e6ddbdc1
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
-ERROR: [VRFC 10-1276] primitive output connection must be a scalar var or net [D:/DigtalLogic/Module/ALU32_GATE/G_Xor32.v:36]
-ERROR: [VRFC 10-2865] module 'G_FullAdder32_default' ignored due to previous errors [D:/DigtalLogic/Module/ALU32_GATE/G_FullAdder32.v:22]
-ERROR: [VRFC 10-1276] primitive output connection must be a scalar var or net [D:/DigtalLogic/Module/ALU32_GATE/G_And32.v:35]
-ERROR: [VRFC 10-1276] primitive output connection must be a scalar var or net [D:/DigtalLogic/Module/ALU32_GATE/G_Or32.v:36]
-ERROR: [VRFC 10-1276] primitive output connection must be a scalar var or net [D:/DigtalLogic/Module/ALU32_GATE/G_Not32.v:35]
-ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.G_Decoder32
+Compiling module xil_defaultlib.G_And32
+Compiling module xil_defaultlib.G_Or32
+Compiling module xil_defaultlib.G_Xor32
+Compiling module xil_defaultlib.G_Not32
+Compiling module xil_defaultlib.G_FullAdder4
+Compiling module xil_defaultlib.G_FullAdder32
+Compiling module xil_defaultlib.G_ALU32
+Compiling module xil_defaultlib.G_ALU32_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot G_ALU32_TB_behav

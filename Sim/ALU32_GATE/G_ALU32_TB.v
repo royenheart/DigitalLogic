@@ -43,7 +43,7 @@ G_ALU32  u_ALU32 (
     .CI                      ( CI           ),
     .A                       ( A     [2:0]  ),
 
-    .Cout                    ( Cout  [31:0] ),
+    .FinalOut                ( Cout  [31:0] ),
     .CO                      ( CO           )
 );
 

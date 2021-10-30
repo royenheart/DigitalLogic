@@ -39,7 +39,10 @@ module G_Decoder32(
     and and0  (Out[0],A0Not,A1Not,A2Not);
     and and1  (Out[1],A0,A1Not,A2Not);
     and and2  (Out[2],A0Not,A1,A2Not);
-    and and3  (Out[3],A0Not,A1Not,A2);
-    and and4  (Out[4],A0,A1Not,A2);
+    and and3  (Out[3],A0,A1,A2Not);
+    and and4  (Out[4],A0Not,A1Not,A2);
+    and and5  (Out[5],A0,A1Not,A2);
+    and and6  (Out[6],A0Not,A1,A2);
+    and and7  (Out[7],A0,A1,A2);
 
 endmodule

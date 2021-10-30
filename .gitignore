@@ -1,16 +1,3 @@
 # exclude files
 
 *.zip
-
-# exclude folder
-
-G_ALU32/G_ALU32.cache/*
-G_ALU32/G_ALU32.hw/*
-G_ALU32/G_ALU32.ip_user_files/*
-G_ALU32/G_ALU32.sim/*
-
-ALU32/ALU32.cache/*
-ALU32/ALU32.hw/*
-ALU32/ALU32.ip_user_files/*
-ALU32/ALU32.runs/*
-ALU32/ALU32.sim/*
