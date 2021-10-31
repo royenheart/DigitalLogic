@@ -60,21 +60,21 @@ module G_FullAdder4(
 
     and andCoE0 (CoElement[0],CI,Pi[0]);
     and andCoE1 (CoElement[1],Pi[1],Gi[0]);
-    and andCoE2 (CoElement[2],CI,Pi[1:0]);
+    and andCoE2 (CoElement[2],CI,Pi[1],Pi[0]);
     and andCoE3 (CoElement[3],Pi[2],Gi[1]);
-    and andCoE4 (CoElement[4],Pi[2:1],Gi[0]);
-    and andCoE5 (CoElement[5],CI,Pi[2:0]);
+    and andCoE4 (CoElement[4],Pi[2],Pi[1],Gi[0]);
+    and andCoE5 (CoElement[5],CI,Pi[2],Pi[1],Pi[0]);
     and andCoE6 (CoElement[6],Pi[3],Gi[2]);
-    and andCoE7 (CoElement[7],Pi[3:2],Gi[1]);
-    and andCoE8 (CoElement[8],Pi[3:1],Gi[0]);
-    and andCoE9 (CoElement[9],CI,Pi[3:0]);
+    and andCoE7 (CoElement[7],Pi[3],Pi[2],Gi[1]);
+    and andCoE8 (CoElement[8],Pi[3],Pi[2],Pi[1],Gi[0]);
+    and andCoE9 (CoElement[9],CI,Pi[3],Pi[2],Pi[1],Pi[0]);
 
     // Calculate COi
 
     or orC1     (COi[0],Gi[0],CoElement[0]);
-    or orC2     (COi[1],Gi[1],CoElement[2:1]);
-    or orC3     (COi[2],Gi[2],CoElement[5:3]);
-    or orC4     (COi[3],Gi[3],CoElement[9:6]);
+    or orC2     (COi[1],Gi[1],CoElement[2],CoElement[1]);
+    or orC3     (COi[2],Gi[2],CoElement[5],CoElement[4],CoElement[3]);
+    or orC4     (COi[3],Gi[3],CoElement[9],CoElement[8],CoElement[7],CoElement[6]);
     buf         (CO,COi[3]);
 
     // Calculate Out with enable message
