@@ -46,7 +46,8 @@ DigitalLogic
 ## 如何运行
 
 - 安装[vivado](https://www.xilinx.com/products/design-tools/vivado.html)
-- 于vivado中打开对应项目的配置信息
+- 于vivado中打开对应项目的配置信息文件(xxx.xpr)
+- 推荐使用vscode作为verilog文件的编辑器
 
 ## 团队成员
 
