@@ -124,6 +124,7 @@ module G_ALU32(
         .Out    (Out[5])
     );
 
+    //// 逻辑左移 ////
     G_RShifter32 uut7_rshifter32 (
         .In1    (In1),
         .In2    (In2),
