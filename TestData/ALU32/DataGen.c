@@ -11,13 +11,13 @@
     数据文件数据：（以下列数据周期重复1000组数据）
     输入1（8位16进制）
     输入2（8位16进制）
-    输入的进位（0，1二进制）
+    输入的进位（1位二进制）
     与结果（8位16进制）
     或结果（8位16进制）
     异或结果（8位16进制）
     输入1非结果（8位16进制）
     加法结果（8位16进制）
-    加法进位（8位16进制）
+    加法进位（1位二进制）
 */
 int main() {
     unsigned int inh1; // 输入1高位
@@ -34,19 +34,20 @@ int main() {
         inh2 = (unsigned int)rand()%randMax;
         inl1 = (unsigned int)rand()%randMax;
         inl2 = (unsigned int)rand()%randMax;
+        CI = (int)rand()%2;
         unsigned in1 = inl1 + inh1 * (unsigned int)pow(16,4);
         unsigned in2 = inl2 + inh2 * (unsigned int)pow(16,4);
-        CI = (int)rand()%2;
         fprintf(p,"%04x%04x\n",inh1,inl1);
         fprintf(p,"%04x%04x\n",inh2,inl2);
         fprintf(p,"%d\n",CI);
         fprintf(p,"%08x\n",in1 & in2);
         fprintf(p,"%08x\n",in1 | in2);
         fprintf(p,"%08x\n",in1 ^ in2);
-        fprintf(p,"%08x\n",!in1);
-        fprintf(p,"%08x\n",in1 + in2);
-        fprintf(p,"%u\n",((unsigned long)(in1 + in2) & (1<33)) / (1<33));
+        fprintf(p,"%08x\n",~in1);
+        fprintf(p,"%08x\n",in1 + in2 + CI);
+        fprintf(p,"%u\n",((unsigned long long)(in1 + in2 + CI) & (0x1ULL<<32)) >> 32);
     }
 
     fclose(p);    
+    return 0;
 }
