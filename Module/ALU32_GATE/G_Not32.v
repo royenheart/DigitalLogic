@@ -36,7 +36,7 @@ module G_Not32(
     // endgenerate
 
     // Calculate ~In
-
+    
     not (OutTmp[0],In[0]);
     not (OutTmp[1],In[1]);
     not (OutTmp[2],In[2]);

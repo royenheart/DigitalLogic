@@ -30,8 +30,6 @@ module G_ALU32(
 
     wire [31:0] Out[7:0];
     wire [7:0]  Dout; // Decoder out
-    assign Out[5] = 32'd0;
-    assign Out[6] = 32'd0;
     assign Out[7] = 32'd0;
 
     // genvar        i ;
@@ -101,7 +99,8 @@ module G_ALU32(
 
     // 逻辑单元 //
     
-    //// 32位超前进位 ////
+    // 32位超前进位 //
+
     G_FullAdder32 uut5_fadder32 (
         .In1    (In1),
         .In2    (In2),
@@ -111,6 +110,29 @@ module G_ALU32(
         .Out    (Out[4]),
         .CO     (CO)
     );
+
+    // 32位超前进位 //
+
+    // 移位运算 //
+
+    //// 逻辑右移 ////
+    G_Shifter32 uut6_shifter32 (
+        .In1    (In1),
+        .In2    (In2),
+        .Enable (Dout[5]),
+
+        .Out    (Out[5])
+    );
+
+    G_RShifter32 uut7_rshifter32 (
+        .In1    (In1),
+        .In2    (In2),
+        .Enable (Dout[6]),
+
+        .Out    (Out[6])
+    );
+
+    // 移位运算 //
 
     // Final Output
 

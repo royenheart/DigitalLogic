@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Oct 31 13:21:06 2021
+# Process ID: 6976
+# Current directory: D:/DigtalLogic/G_ALU32/G_ALU32.sim/G_Shi2/behav/xsim
+# Command line: wbtcv.exe -mode batch -source D:/DigtalLogic/G_ALU32/G_ALU32.sim/G_Shi2/behav/xsim/xsim.dir/G_Shi2_TB_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/DigtalLogic/G_ALU32/G_ALU32.sim/G_Shi2/behav/xsim/webtalk.log
+# Journal file: D:/DigtalLogic/G_ALU32/G_ALU32.sim/G_Shi2/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source D:/DigtalLogic/G_ALU32/G_ALU32.sim/G_Shi2/behav/xsim/xsim.dir/G_Shi2_TB_behav/webtalk/xsim_webtalk.tcl -notrace

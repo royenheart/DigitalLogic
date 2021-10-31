@@ -15,6 +15,14 @@ Compiling module xil_defaultlib.G_Xor32
 Compiling module xil_defaultlib.G_Not32
 Compiling module xil_defaultlib.G_FullAdder4
 Compiling module xil_defaultlib.G_FullAdder32
+Compiling module xil_defaultlib.G_Shi1
+Compiling module xil_defaultlib.G_Shi2
+Compiling module xil_defaultlib.G_Shi4
+Compiling module xil_defaultlib.G_Shi8
+Compiling module xil_defaultlib.G_Shi16
+Compiling module xil_defaultlib.G_Shifter32
+Compiling module xil_defaultlib.G_Reverse
+Compiling module xil_defaultlib.G_RShifter32
 Compiling module xil_defaultlib.G_ALU32
 Compiling module xil_defaultlib.G_ALU32_TB
 Compiling module xil_defaultlib.glbl

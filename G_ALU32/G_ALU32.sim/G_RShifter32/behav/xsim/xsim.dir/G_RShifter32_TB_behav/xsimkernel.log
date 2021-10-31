@@ -1,0 +1,7 @@
+Running: xsim.dir/G_RShifter32_TB_behav/xsimk.exe -simmode gui -wdb G_RShifter32_TB_behav.wdb -simrunnum 0 -socket 14817
+Design successfully loaded
+Design Loading Memory Usage: 7444 KB (Peak: 7444 KB)
+Design Loading CPU Usage: 62 ms
+Simulation completed
+Simulation Memory Usage: 8308 KB (Peak: 8308 KB)
+Simulation CPU Usage: 77 ms

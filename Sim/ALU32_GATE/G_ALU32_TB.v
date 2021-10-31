@@ -28,14 +28,19 @@ parameter PERIOD  = 10;
 reg   [2:0]  T                              = 0 ;
 
 // ALU32 Inputs
-wire   [31:0]  In1                          = 32'd4325 ;
-wire   [31:0]  In2                          = 32'd464 ;
+//wire   [31:0]  In1                          = 32'b100010101010100010101010 ; 
+wire   [31:0]  In1                          = 32'b10100000000100000100000000010000 ;
+wire   [31:0]  In2                          = 32'd2 ;
 wire   CI                                   = 0 ;
 wire   [2:0]  A                             = T ;
 
 // ALU32 Outputs
 wire  [31:0]  Cout                         ;
 wire  CO                                   ;
+
+// File read and open
+
+integer data;
 
 G_ALU32  u_ALU32 (
     .In1                     ( In1   [31:0] ),
@@ -56,12 +61,18 @@ begin
     end
 end
 
+initial 
+begin
+    data = $fopen("../../TestData/G_ALU32/data01.txt","r");    
+end
+
 always 
 begin
     #10;
-    if ($time >= 500)
+    if ($time >= 160)
     begin
         #10;
+
         $finish;
     end    
 end

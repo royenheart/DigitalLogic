@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/Module/ALU32_GATE/G_ShiE/G_Shi2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module G_Shi2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/Sim/ALU32_GATE/G_Shi2_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module G_Shi2_TB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/G_ALU32/G_ALU32.sim/G_Shi2/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
