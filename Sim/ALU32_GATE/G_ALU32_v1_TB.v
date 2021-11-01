@@ -37,6 +37,9 @@ reg   [31:0] matchXor                       ;
 reg   [31:0] matchNot                       ;
 reg   [31:0] matchAdd                       ;
 reg   matchCO                               ;
+reg   [31:0] matchLShifter                         ;
+reg   [31:0] matchRShifter                         ;
+reg   [31:0] matchTruncated                        ;
 
 // ALU32 Inputs
 wire [31:0] In1                             = In1Data;
@@ -63,6 +66,9 @@ wire ismatchXor                                = (matchXor == Cout)?1:0;
 wire ismatchNot                                = (matchNot == Cout)?1:0;
 wire ismatchAdd                                = (matchAdd == Cout)?1:0;
 wire ismatchCO                                 = (matchCO == CO)?1:0;
+wire ismatchLShifter                           = (matchLShifter  == Cout)?1:0;
+wire ismatchRShifter                           = (matchRShifter  == Cout)?1:0;
+wire ismatchTruncated                          = (matchTruncated == Cout)?1:0;
 
 G_ALU32_v1  u_ALU32 (
     .In1                     ( In1   [31:0] ),
@@ -103,6 +109,9 @@ begin
     code = $fscanf(data,"%h",matchNot);
     code = $fscanf(data,"%h",matchAdd);
     code = $fscanf(data,"%h",matchCO);
+    code = $fscanf(data,"%h",matchLShifter);
+    code = $fscanf(data,"%h",matchRShifter);
+    code = $fscanf(data,"%h",matchTruncated);
 end
 
 // 一次周期（160时间单位）读取下一组数据
@@ -118,6 +127,9 @@ begin
     code = $fscanf(data,"%h",matchNot);
     code = $fscanf(data,"%h",matchAdd);
     code = $fscanf(data,"%h",matchCO);
+    code = $fscanf(data,"%h",matchLShifter);
+    code = $fscanf(data,"%h",matchRShifter);
+    code = $fscanf(data,"%h",matchTruncated);
 end
 
 // 每次周期结束判断是否退出
