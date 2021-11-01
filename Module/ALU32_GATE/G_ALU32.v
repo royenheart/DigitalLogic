@@ -30,7 +30,6 @@ module G_ALU32(
 
     wire [31:0] Out[7:0];
     wire [7:0]  Dout; // Decoder out
-    assign Out[7] = 32'd0;
 
     // genvar        i ;
     // genvar        j ;
@@ -134,6 +133,10 @@ module G_ALU32(
     );
 
     // 移位运算 //
+
+    // 高低位截断 //
+
+    // 高低位截断 //
 
     // Final Output
 
