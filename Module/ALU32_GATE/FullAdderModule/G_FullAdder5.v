@@ -85,12 +85,12 @@ module G_FullAdder5 (
     or orC5     (COi[4],Gi[4],CoElement[14],CoElement[13],CoElement[12],CoElement[11],CoElement[10]);
     buf         (CO,COi[4]);
 
-    // Calculate Out with enable message
+    // Calculate Out
 
     xor out1    (Out[0],In1[0],In2[0],CI);
     xor out2    (Out[1],In1[1],In2[1],COi[0]);
     xor out3    (Out[2],In1[2],In2[2],COi[1]);
     xor out4    (Out[3],In1[3],In2[3],COi[2]);
-    xor out5    (Out[4],In1[4],In2[4],COi[4]);
+    xor out5    (Out[4],In1[4],In2[4],COi[3]);
 
 endmodule

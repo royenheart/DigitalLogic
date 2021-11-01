@@ -19,8 +19,8 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-// 超前进位加法器（4位超前进位串联）
-module G_FullAdder32(
+// 超前进位加法器（4个8位超前进位串联）
+module G_FullAdder32_48(
         input wire [31:0]    In1,
         input wire [31:0]    In2,
         input wire           CI,
@@ -29,84 +29,48 @@ module G_FullAdder32(
         output wire          CO
     );
 
-    wire [7:0]  COi;
+    wire [3:0]  COi;
     wire [31:0] OutTmp;
 
-    // 调用8次4位超前进位加法模块
+    // 调用4次8位超前进位加法模块
 
-    G_FullAdder4 fadd4_u0 (
-        .In1     (In1[3:0]),
-        .In2     (In2[3:0]),
+    G_FullAdder8 fadd4_u0 (
+        .In1     (In1[7:0]),
+        .In2     (In2[7:0]),
         .CI      (CI), 
                 
-        .Out     (OutTmp[3:0]),
+        .Out     (OutTmp[7:0]),
         .CO      (COi[0])
     );
 
-    G_FullAdder4 fadd4_u1 (
-        .In1    (In1[7:4]),
-        .In2    (In2[7:4]),
+    G_FullAdder8 fadd4_u1 (
+        .In1    (In1[15:8]),
+        .In2    (In2[15:8]),
         .CI     (COi[0]),
 
-        .Out    (OutTmp[7:4]),
+        .Out    (OutTmp[15:8]),
         .CO     (COi[1])
     );
 
-    G_FullAdder4 fadd4_u2 (
-        .In1     (In1[11:8]),
-        .In2     (In2[11:8]),
+    G_FullAdder8 fadd4_u2 (
+        .In1     (In1[23:16]),
+        .In2     (In2[23:16]),
         .CI      (COi[1]), 
                 
-        .Out     (OutTmp[11:8]),
+        .Out     (OutTmp[23:16]),
         .CO      (COi[2])
     );
 
-    G_FullAdder4 fadd4_u3 (
-        .In1     (In1[15:12]),
-        .In2     (In2[15:12]),
+    G_FullAdder8 fadd4_u3 (
+        .In1     (In1[31:24]),
+        .In2     (In2[31:24]),
         .CI      (COi[2]), 
                 
-        .Out     (OutTmp[15:12]),
+        .Out     (OutTmp[31:24]),
         .CO      (COi[3])
     );
 
-    G_FullAdder4 fadd4_u4 (
-        .In1     (In1[19:16]),
-        .In2     (In2[19:16]),
-        .CI      (COi[3]), 
-                
-        .Out     (OutTmp[19:16]),
-        .CO      (COi[4])
-    );    
-
-    G_FullAdder4 fadd4_u5 (
-        .In1     (In1[23:20]),
-        .In2     (In2[23:20]),
-        .CI      (COi[4]), 
-                
-        .Out     (OutTmp[23:20]),
-        .CO      (COi[5])
-    );
-
-    G_FullAdder4 fadd4_u6 (
-        .In1     (In1[27:24]),
-        .In2     (In2[27:24]),
-        .CI      (COi[5]), 
-                
-        .Out     (OutTmp[27:24]),
-        .CO      (COi[6])
-    );
-    
-    G_FullAdder4 fadd4_u7 (
-        .In1     (In1[31:28]),
-        .In2     (In2[31:28]),
-        .CI      (COi[6]), 
-                
-        .Out     (OutTmp[31:28]),
-        .CO      (COi[7])
-    );
-
-    buf     (CO,COi[7]);
+    buf     (CO,COi[3]);
 
     // And Enable Message to Out
 

@@ -77,7 +77,7 @@ module G_FullAdder4(
     or orC4     (COi[3],Gi[3],CoElement[9],CoElement[8],CoElement[7],CoElement[6]);
     buf         (CO,COi[3]);
 
-    // Calculate Out with enable message
+    // Calculate Out 
 
     xor out1    (Out[0],In1[0],In2[0],CI);
     xor out2    (Out[1],In1[1],In2[1],COi[0]);

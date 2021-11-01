@@ -19,7 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module G_ALU32(
+module G_ALU32_v1 (
         input wire  [31:0]   In1,
         input wire  [31:0]   In2,
         input wire           CI,
@@ -98,9 +98,9 @@ module G_ALU32(
 
     // 逻辑单元 //
     
-    // 32位超前进位 //
+    // 32位超前进位-8个4位超前进位加法器串联 //
 
-    G_FullAdder32 uut5_fadder32 (
+    G_FullAdder32_84 uut5_fadder32 (
         .In1    (In1),
         .In2    (In2),
         .CI     (CI),

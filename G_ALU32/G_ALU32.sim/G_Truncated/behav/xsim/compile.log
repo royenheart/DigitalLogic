@@ -1,0 +1,30 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/Module/ALU32_GATE/LogicModule/G_And32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module G_And32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/Module/ALU32_GATE/G_Decoder32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module G_Decoder32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/Module/ALU32_GATE/FullAdderModule/G_FullAdder32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module G_FullAdder32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/Module/ALU32_GATE/FullAdderModule/G_FullAdder4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module G_FullAdder4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/Module/ALU32_GATE/LogicModule/G_Not32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module G_Not32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/Module/ALU32_GATE/LogicModule/G_Or32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module G_Or32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/Module/ALU32_GATE/ShifterModule/G_RShifter32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module G_RShifter32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/Module/ALU32_GATE/ShifterModule/G_ShifterDig/G_Shi1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module G_Shi1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/Module/ALU32_GATE/ShifterModule/G_ShifterDig/G_Shi16.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module G_Shi16
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/Module/ALU32_GATE/ShifterModule/G_ShifterDig/G_Shi2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module G_Shi2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/Module/ALU32_GATE/ShifterModule/G_ShifterDig/G_Shi4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module G_Shi4
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/Module/ALU32_GATE/ShifterModule/G_ShifterDig/G_Shi8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module G_Shi8
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/Module/ALU32_GATE/ShifterModule/G_Shifter32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module G_Shifter32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/Module/ALU32_GATE/LogicModule/G_Xor32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module G_Xor32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/Module/ALU32_GATE/G_ALU32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module G_ALU32

@@ -19,13 +19,15 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module G_ALU32_TB;
+module G_ALU32_v1_TB;
 
 // ALU32 Parameters
 parameter PERIOD  = 10;
 
 // ALU32 A Change Timeval
 reg   [2:0]  T                              = 0 ;
+
+// ALU32 input data and match data
 reg   [31:0] In1Data                        ;
 reg   [31:0] In2Data                        ;
 reg   CIData                                ;
@@ -62,7 +64,7 @@ wire ismatchNot                                = (matchNot == Cout)?1:0;
 wire ismatchAdd                                = (matchAdd == Cout)?1:0;
 wire ismatchCO                                 = (matchCO == CO)?1:0;
 
-G_ALU32  u_ALU32 (
+G_ALU32_v1  u_ALU32 (
     .In1                     ( In1   [31:0] ),
     .In2                     ( In2   [31:0] ),
     .CI                      ( CI           ),
