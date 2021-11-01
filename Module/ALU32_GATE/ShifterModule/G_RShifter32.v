@@ -23,35 +23,26 @@ module G_RShifter32 (
     input wire [31:0]   In1,
     input wire [31:0]   In2,
     input wire          Enable, // Enable Message, high as enable
-    output wire [31:0]  Out,
-    output wire [31:0]  OutTmp
+    output wire [31:0]  Out
 );
     
-    wire [31:0]  In1R;
     wire [31:0]  Outi[4:0];
 
-
-    G_Reverse r1 (
-        .In     (In1),
-        
-        .Out    (In1R)
-    );
-
-    G_Shi1 Rgs1 (
-        .In     (In1R),
+    G_Shi1 gs1 (
+        .In    (In1),
         .B      (In2[0]),
 
         .Out    (Outi[0])
     );
 
-    G_Shi2 Rgs2 (
+    G_Shi2 gs2 (
         .In    (Outi[0]),
         .B      (In2[1]),
 
         .Out    (Outi[1])
     );
 
-    G_Shi4 Rgs4 (
+    G_Shi4 gs4 (
         .In    (Outi[1]),
         .B      (In2[2]),
 
@@ -59,23 +50,17 @@ module G_RShifter32 (
         
     );
 
-    G_Shi8 Rgs8 (
+    G_Shi8 gs8 (
         .In    (Outi[2]),
         .B      (In2[3]),
 
         .Out    (Outi[3])
     );
 
-    G_Shi16 Rgs16 (
+    G_Shi16 gs16 (
         .In     (Outi[3]),
         .B      (In2[4]),
 
-        .Out    (OutTmp)
-    );
-
-    G_Reverse r2 (
-        .In     (OutTmp),
-        
         .Out    (Outi[4])
     );
 

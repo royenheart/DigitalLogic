@@ -31,22 +31,6 @@ module G_ALU32_v1 (
     wire [31:0] Out[7:0];
     wire [7:0]  Dout; // Decoder out
 
-    // genvar        i ;
-    // genvar        j ;
-    // generate
-    //     for (i = 0; i <= 7; i = i + 1)
-    //     begin
-    //         for (j = 0; j <= 31; j = j + 1)
-    //         begin: can_gen_every
-    //             and genc (Can[i][j],Out[i][j],Dout[i]);
-    //         end
-    //     end
-    //     for (i = 0; i <= 31; i = i + 1)
-    //     begin: cout_gen
-    //         or  cout (Cout[i],Can[0][i],Can[1][i],Can[2][i],Can[3][i],Can[4][i]);
-    //     end
-    // endgenerate
-
     // 解码器 //
 
     G_Decoder32 uut0_dec (
@@ -114,8 +98,8 @@ module G_ALU32_v1 (
 
     // 移位运算 //
 
-    //// 逻辑右移 ////
-    G_Shifter32 uut6_shifter32 (
+    //// 逻辑左移 ////
+    G_LShifter32 uut6_shifter32 (
         .In1    (In1),
         .In2    (In2),
         .Enable (Dout[5]),
@@ -123,7 +107,7 @@ module G_ALU32_v1 (
         .Out    (Out[5])
     );
 
-    //// 逻辑左移 ////
+    //// 逻辑右移 ////
     G_RShifter32 uut7_rshifter32 (
         .In1    (In1),
         .In2    (In2),
@@ -135,6 +119,14 @@ module G_ALU32_v1 (
     // 移位运算 //
 
     // 高低位截断 //
+
+    G_Truncated uut8_truncated32 (
+        .In1    (In1),
+        .In2    (In2),
+        .Enable (Dout[7]),
+
+        .Out    (Out[7])
+    );
 
     // 高低位截断 //
 
