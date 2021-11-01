@@ -1,10 +1,14 @@
 # compile verilog/system verilog design source files
 verilog xil_defaultlib  \
-"../../../../../Module/ALU32_GATE/G_ALU32.v" \
+"../../../../../Module/ALU32_GATE/G_ALU32_v1.v" \
 "../../../../../Module/ALU32_GATE/LogicModule/G_And32.v" \
 "../../../../../Module/ALU32_GATE/G_Decoder32.v" \
-"../../../../../Module/ALU32_GATE/FullAdderModule/G_FullAdder32.v" \
+"../../../../../Module/ALU32_GATE/FullAdderModule/G_FullAdder32_84.v" \
 "../../../../../Module/ALU32_GATE/FullAdderModule/G_FullAdder4.v" \
+"../../../../../Module/ALU32_GATE/FullAdderModule/G_FullAdder5.v" \
+"../../../../../Module/ALU32_GATE/TruncatedModule/G_HTruncated.v" \
+"../../../../../Module/ALU32_GATE/ShifterModule/G_LShifter32.v" \
+"../../../../../Module/ALU32_GATE/TruncatedModule/G_LTruncated.v" \
 "../../../../../Module/ALU32_GATE/LogicModule/G_Not32.v" \
 "../../../../../Module/ALU32_GATE/LogicModule/G_Or32.v" \
 "../../../../../Module/ALU32_GATE/ShifterModule/G_RShifter32.v" \
@@ -14,9 +18,12 @@ verilog xil_defaultlib  \
 "../../../../../Module/ALU32_GATE/ShifterModule/G_ShifterDig/G_Shi2.v" \
 "../../../../../Module/ALU32_GATE/ShifterModule/G_ShifterDig/G_Shi4.v" \
 "../../../../../Module/ALU32_GATE/ShifterModule/G_ShifterDig/G_Shi8.v" \
-"../../../../../Module/ALU32_GATE/ShifterModule/G_Shifter32.v" \
+"../../../../../Module/ALU32_GATE/TruncatedModule/G_TLShifter32.v" \
+"../../../../../Module/ALU32_GATE/TruncatedModule/G_TRShifter32.v" \
+"../../../../../Module/ALU32_GATE/TruncatedModule/G_Truncated.v" \
 "../../../../../Module/ALU32_GATE/LogicModule/G_Xor32.v" \
-"../../../../../Sim/ALU32_GATE/G_ALU32_TB.v" \
+"../../../../../Module/ALU32_GATE/TruncatedModule/movenum.v" \
+"../../../../../Sim/ALU32_GATE/G_ALU32_v1_TB.v" \
 
 # compile glbl module
 verilog xil_defaultlib "glbl.v"

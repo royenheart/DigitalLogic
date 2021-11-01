@@ -7,15 +7,16 @@
 - - 完善功能中。。。
 2. G_ALU32
 - 门级设计32位ALU
-- - 完善功能中。。。
+- - 功能已实现，待完善。。。
 
 ## TODO
 
-- 模块化
 - 精简设计
 - 优化时延
 - 实现优先编码器
 - 自动项目打包工具
+- 修改bug（testbench读写文件bug）
+- 制作说明书
 - 规范代码
 
 ## 文档结构
@@ -26,6 +27,7 @@ DigitalLogic
 │  └─ALU32.xpr - 项目配置信息文件
 ├─G_ALU32
 │  └─G_ALU32.xpr - 项目配置信息文件
+├─Draft - 草稿、弃用模块
 ├─ImplementationSchematic - 执行阶段电路图解
 │  └─ALU32
 ├─ImplementationTiming - 执行阶段电路时延信息
