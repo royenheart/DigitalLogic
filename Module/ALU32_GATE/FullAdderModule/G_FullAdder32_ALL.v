@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 // 超前进位加法器（32位直接运算）
-module G_FullAdder32(
+module G_FullAdder32_ALL (
         input wire [31:0]    In1,
         input wire [31:0]    In2,
         input wire           CI,

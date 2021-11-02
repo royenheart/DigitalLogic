@@ -1,0 +1,286 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Tue Nov  2 15:57:01 2021
+# Process ID: 18256
+# Current directory: D:/DigtalLogic/G_ALU32/G_ALU32.runs/synth_1
+# Command line: vivado.exe -log G_ALU32_v2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source G_ALU32_v2.tcl
+# Log file: D:/DigtalLogic/G_ALU32/G_ALU32.runs/synth_1/G_ALU32_v2.vds
+# Journal file: D:/DigtalLogic/G_ALU32/G_ALU32.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source G_ALU32_v2.tcl -notrace
+Command: synth_design -top G_ALU32_v2 -part xc7a200tfbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 28560
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1134.082 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'G_ALU32_v2' [D:/DigtalLogic/Module/ALU32_GATE/G_ALU32_v2.v:23]
+INFO: [Synth 8-6157] synthesizing module 'G_Decoder32' [D:/DigtalLogic/Module/ALU32_GATE/G_Decoder32.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'G_Decoder32' (1#1) [D:/DigtalLogic/Module/ALU32_GATE/G_Decoder32.v:22]
+INFO: [Synth 8-6157] synthesizing module 'G_And32' [D:/DigtalLogic/Module/ALU32_GATE/LogicModule/G_And32.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'G_And32' (2#1) [D:/DigtalLogic/Module/ALU32_GATE/LogicModule/G_And32.v:22]
+INFO: [Synth 8-6157] synthesizing module 'G_Or32' [D:/DigtalLogic/Module/ALU32_GATE/LogicModule/G_Or32.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'G_Or32' (3#1) [D:/DigtalLogic/Module/ALU32_GATE/LogicModule/G_Or32.v:22]
+INFO: [Synth 8-6157] synthesizing module 'G_Xor32' [D:/DigtalLogic/Module/ALU32_GATE/LogicModule/G_Xor32.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'G_Xor32' (4#1) [D:/DigtalLogic/Module/ALU32_GATE/LogicModule/G_Xor32.v:22]
+INFO: [Synth 8-6157] synthesizing module 'G_Not32' [D:/DigtalLogic/Module/ALU32_GATE/LogicModule/G_Not32.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'G_Not32' (5#1) [D:/DigtalLogic/Module/ALU32_GATE/LogicModule/G_Not32.v:22]
+INFO: [Synth 8-6157] synthesizing module 'G_FullAdder32_48' [D:/DigtalLogic/Module/ALU32_GATE/FullAdderModule/G_FullAdder32_48.v:23]
+INFO: [Synth 8-6157] synthesizing module 'G_FullAdder8' [D:/DigtalLogic/Module/ALU32_GATE/FullAdderModule/G_FullAdder8.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'G_FullAdder8' (6#1) [D:/DigtalLogic/Module/ALU32_GATE/FullAdderModule/G_FullAdder8.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'G_FullAdder32_48' (7#1) [D:/DigtalLogic/Module/ALU32_GATE/FullAdderModule/G_FullAdder32_48.v:23]
+INFO: [Synth 8-6157] synthesizing module 'G_LShifter32' [D:/DigtalLogic/Module/ALU32_GATE/ShifterModule/G_LShifter32.v:22]
+INFO: [Synth 8-6157] synthesizing module 'G_Reverse' [D:/DigtalLogic/Module/ALU32_GATE/G_Reverse.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'G_Reverse' (8#1) [D:/DigtalLogic/Module/ALU32_GATE/G_Reverse.v:22]
+INFO: [Synth 8-6157] synthesizing module 'G_Shi1' [D:/DigtalLogic/Module/ALU32_GATE/ShifterModule/G_ShifterDig/G_Shi1.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'G_Shi1' (9#1) [D:/DigtalLogic/Module/ALU32_GATE/ShifterModule/G_ShifterDig/G_Shi1.v:22]
+INFO: [Synth 8-6157] synthesizing module 'G_Shi2' [D:/DigtalLogic/Module/ALU32_GATE/ShifterModule/G_ShifterDig/G_Shi2.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'G_Shi2' (10#1) [D:/DigtalLogic/Module/ALU32_GATE/ShifterModule/G_ShifterDig/G_Shi2.v:22]
+INFO: [Synth 8-6157] synthesizing module 'G_Shi4' [D:/DigtalLogic/Module/ALU32_GATE/ShifterModule/G_ShifterDig/G_Shi4.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'G_Shi4' (11#1) [D:/DigtalLogic/Module/ALU32_GATE/ShifterModule/G_ShifterDig/G_Shi4.v:22]
+INFO: [Synth 8-6157] synthesizing module 'G_Shi8' [D:/DigtalLogic/Module/ALU32_GATE/ShifterModule/G_ShifterDig/G_Shi8.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'G_Shi8' (12#1) [D:/DigtalLogic/Module/ALU32_GATE/ShifterModule/G_ShifterDig/G_Shi8.v:22]
+INFO: [Synth 8-6157] synthesizing module 'G_Shi16' [D:/DigtalLogic/Module/ALU32_GATE/ShifterModule/G_ShifterDig/G_Shi16.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'G_Shi16' (13#1) [D:/DigtalLogic/Module/ALU32_GATE/ShifterModule/G_ShifterDig/G_Shi16.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'G_LShifter32' (14#1) [D:/DigtalLogic/Module/ALU32_GATE/ShifterModule/G_LShifter32.v:22]
+INFO: [Synth 8-6157] synthesizing module 'G_RShifter32' [D:/DigtalLogic/Module/ALU32_GATE/ShifterModule/G_RShifter32.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'G_RShifter32' (15#1) [D:/DigtalLogic/Module/ALU32_GATE/ShifterModule/G_RShifter32.v:22]
+INFO: [Synth 8-6157] synthesizing module 'G_Truncated' [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_Truncated.v:23]
+INFO: [Synth 8-6157] synthesizing module 'movenum' [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/movenum.v:23]
+INFO: [Synth 8-6157] synthesizing module 'G_FullAdder5' [D:/DigtalLogic/Module/ALU32_GATE/FullAdderModule/G_FullAdder5.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'G_FullAdder5' (16#1) [D:/DigtalLogic/Module/ALU32_GATE/FullAdderModule/G_FullAdder5.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'movenum' (17#1) [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/movenum.v:23]
+INFO: [Synth 8-6157] synthesizing module 'G_LTruncated' [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_LTruncated.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_LTruncated.v:31]
+INFO: [Synth 8-6157] synthesizing module 'G_TLShifter32' [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TLShifter32.v:22]
+WARNING: [Synth 8-6104] Input port 'Out' has an internal driver [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TLShifter32.v:80]
+WARNING: [Synth 8-6104] Input port 'Out' has an internal driver [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TLShifter32.v:81]
+WARNING: [Synth 8-6104] Input port 'Out' has an internal driver [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TLShifter32.v:82]
+WARNING: [Synth 8-6104] Input port 'Out' has an internal driver [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TLShifter32.v:83]
+WARNING: [Synth 8-6104] Input port 'Out' has an internal driver [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TLShifter32.v:84]
+WARNING: [Synth 8-6104] Input port 'Out' has an internal driver [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TLShifter32.v:85]
+WARNING: [Synth 8-6104] Input port 'Out' has an internal driver [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TLShifter32.v:86]
+WARNING: [Synth 8-6104] Input port 'Out' has an internal driver [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TLShifter32.v:87]
+WARNING: [Synth 8-6104] Input port 'Out' has an internal driver [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TLShifter32.v:88]
+WARNING: [Synth 8-6104] Input port 'Out' has an internal driver [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TLShifter32.v:89]
+WARNING: [Synth 8-6104] Input port 'Out' has an internal driver [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TLShifter32.v:90]
+WARNING: [Synth 8-6104] Input port 'Out' has an internal driver [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TLShifter32.v:91]
+WARNING: [Synth 8-6104] Input port 'Out' has an internal driver [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TLShifter32.v:92]
+WARNING: [Synth 8-6104] Input port 'Out' has an internal driver [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TLShifter32.v:93]
+WARNING: [Synth 8-6104] Input port 'Out' has an internal driver [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TLShifter32.v:94]
+WARNING: [Synth 8-6104] Input port 'Out' has an internal driver [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TLShifter32.v:95]
+WARNING: [Synth 8-6104] Input port 'Out' has an internal driver [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TLShifter32.v:96]
+WARNING: [Synth 8-6104] Input port 'Out' has an internal driver [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TLShifter32.v:97]
+WARNING: [Synth 8-6104] Input port 'Out' has an internal driver [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TLShifter32.v:98]
+WARNING: [Synth 8-6104] Input port 'Out' has an internal driver [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TLShifter32.v:99]
+WARNING: [Synth 8-6104] Input port 'Out' has an internal driver [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TLShifter32.v:100]
+WARNING: [Synth 8-6104] Input port 'Out' has an internal driver [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TLShifter32.v:101]
+WARNING: [Synth 8-6104] Input port 'Out' has an internal driver [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TLShifter32.v:102]
+WARNING: [Synth 8-6104] Input port 'Out' has an internal driver [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TLShifter32.v:103]
+WARNING: [Synth 8-6104] Input port 'Out' has an internal driver [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TLShifter32.v:104]
+WARNING: [Synth 8-6104] Input port 'Out' has an internal driver [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TLShifter32.v:105]
+WARNING: [Synth 8-6104] Input port 'Out' has an internal driver [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TLShifter32.v:106]
+WARNING: [Synth 8-6104] Input port 'Out' has an internal driver [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TLShifter32.v:107]
+WARNING: [Synth 8-6104] Input port 'Out' has an internal driver [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TLShifter32.v:108]
+WARNING: [Synth 8-6104] Input port 'Out' has an internal driver [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TLShifter32.v:109]
+WARNING: [Synth 8-6104] Input port 'Out' has an internal driver [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TLShifter32.v:110]
+WARNING: [Synth 8-6104] Input port 'Out' has an internal driver [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TLShifter32.v:111]
+INFO: [Synth 8-6155] done synthesizing module 'G_TLShifter32' (18#1) [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TLShifter32.v:22]
+INFO: [Synth 8-6157] synthesizing module 'G_TRShifter32' [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TRShifter32.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'G_TRShifter32' (19#1) [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TRShifter32.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'G_LTruncated' (20#1) [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_LTruncated.v:23]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_Truncated.v:52]
+INFO: [Synth 8-6157] synthesizing module 'G_HTruncated' [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_HTruncated.v:23]
+WARNING: [Synth 8-6104] Input port 'Out' has an internal driver [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_HTruncated.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'G_HTruncated' (21#1) [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_HTruncated.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'G_Truncated' (22#1) [D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_Truncated.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'G_ALU32_v2' (23#1) [D:/DigtalLogic/Module/ALU32_GATE/G_ALU32_v2.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1134.082 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1134.082 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1134.082 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 1134.082 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/DigtalLogic/Constraints/G_ALU32/G_ALU32_v1_01.xdc]
+Finished Parsing XDC File [D:/DigtalLogic/Constraints/G_ALU32/G_ALU32_v1_01.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/DigtalLogic/Constraints/G_ALU32/G_ALU32_v1_01.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/G_ALU32_v2_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/G_ALU32_v2_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1172.445 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1172.445 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1172.445 ; gain = 38.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1172.445 ; gain = 38.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1172.445 ; gain = 38.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1172.445 ; gain = 38.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 32    
+	   3 Input      1 Bit         XORs := 37    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1172.445 ; gain = 38.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1172.445 ; gain = 38.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1172.445 ; gain = 38.363
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 1174.648 ; gain = 40.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1190.434 ; gain = 56.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1190.434 ; gain = 56.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1190.434 ; gain = 56.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1190.434 ; gain = 56.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1190.434 ; gain = 56.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1190.434 ; gain = 56.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |    36|
+|2     |LUT3 |    62|
+|3     |LUT4 |    42|
+|4     |LUT5 |   132|
+|5     |LUT6 |   434|
+|6     |IBUF |    68|
+|7     |OBUF |    33|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1190.434 ; gain = 56.352
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 1190.434 ; gain = 17.988
+Synthesis Optimization Complete : Time (s): cpu = 00:00:32 ; elapsed = 00:00:32 . Memory (MB): peak = 1190.434 ; gain = 56.352
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1202.473 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1209.742 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 394429b3
+INFO: [Common 17-83] Releasing license: Synthesis
+59 Infos, 35 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 1209.742 ; gain = 75.660
+INFO: [Common 17-1381] The checkpoint 'D:/DigtalLogic/G_ALU32/G_ALU32.runs/synth_1/G_ALU32_v2.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file G_ALU32_v2_utilization_synth.rpt -pb G_ALU32_v2_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  2 15:57:42 2021...

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1635774269">
-  <File Type="PA-TCL" Name="G_ALU32_v1.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="G_ALU32_v1_drc_synth.rpt"/>
-  <File Type="REPORTS-TCL" Name="G_ALU32_v1_reports.tcl"/>
-  <File Type="RDS-RDS" Name="G_ALU32_v1.vds"/>
-  <File Type="RDS-UTIL" Name="G_ALU32_v1_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="G_ALU32_v1_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="G_ALU32_v1.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="G_ALU32_v1_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="G_ALU32_v1_timing_summary_synth.pb"/>
+<GenRun Id="synth_1" LaunchPart="xc7a200tfbg676-2" LaunchTime="1635839818">
+  <File Type="PA-TCL" Name="G_ALU32_v2.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="G_ALU32_v2_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="G_ALU32_v2_reports.tcl"/>
+  <File Type="RDS-RDS" Name="G_ALU32_v2.vds"/>
+  <File Type="RDS-UTIL" Name="G_ALU32_v2_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="G_ALU32_v2_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="G_ALU32_v2.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="G_ALU32_v2_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="G_ALU32_v2_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../Module/ALU32_GATE/LogicModule/G_And32.v">
@@ -25,14 +25,7 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../Module/ALU32_GATE/FullAdderModule/G_FullAdder32_84.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../Module/ALU32_GATE/FullAdderModule/G_FullAdder4.v">
+    <File Path="$PPRDIR/../Module/ALU32_GATE/FullAdderModule/G_FullAdder32_48.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -40,6 +33,13 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/../Module/ALU32_GATE/FullAdderModule/G_FullAdder5.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Module/ALU32_GATE/FullAdderModule/G_FullAdder8.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -165,24 +165,8 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PPRDIR/../Module/ALU32_GATE/G_ALU32_v1.v">
+    <File Path="$PPRDIR/../Module/ALU32_GATE/G_ALU32_v2.v">
       <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../Module/ALU32_GATE/FullAdderModule/G_FullAdder32_48.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/../Module/ALU32_GATE/FullAdderModule/G_FullAdder8.v">
-      <FileInfo>
-        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -196,15 +180,53 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PPRDIR/../Module/ALU32_GATE/G_ALU32_v3.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Module/ALU32_GATE/FullAdderModule/G_FullAdder32_84.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Module/ALU32_GATE/FullAdderModule/G_FullAdder4.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Module/ALU32_GATE/G_ALU32_v1.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="G_ALU32_v1"/>
-      <Option Name="TopAutoSet" Val="TRUE"/>
+      <Option Name="TopModule" Val="G_ALU32_v2"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../Constraints/G_ALU32/G_ALU32_v1_01.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
     <Config>
+      <Option Name="TargetConstrsFile" Val="$PPRDIR/../Constraints/G_ALU32/G_ALU32_v1_01.xdc"/>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
   </FileSet>
@@ -215,7 +237,9 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>

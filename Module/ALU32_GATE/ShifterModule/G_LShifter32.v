@@ -23,10 +23,10 @@ module G_LShifter32 (
     input wire [31:0]   In1,
     input wire [31:0]   In2,
     input wire          Enable, // Enable Message, high as enable
-    output wire [31:0]  Out,
-    output wire [31:0]  OutTmp
+    output wire [31:0]  Out
 );
     
+    wire [31:0]  OutTmp;
     wire [31:0]  In1R;
     wire [31:0]  Outi[4:0];
 

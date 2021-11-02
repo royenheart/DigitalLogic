@@ -21,13 +21,13 @@
 
 // 截断
 module G_Truncated(
-    	input wire [31:0]	In1,
-		input wire [31:0]	In2,
+        input wire [31:0]	In1,
+        input wire [31:0]	In2,
         input wire          Enable,
-		output	wire [31:0] Out
+        output wire [31:0]  Out
     );
     
-    wire [31:0] op;
+    wire [5:0] op;
     wire [31:0] out1;
     wire [31:0] out2;
     wire [31:0] out3;
@@ -37,21 +37,21 @@ module G_Truncated(
     wire        tmp1,tmp2;
     
     movenum uut1(
-      .In (In2),
+      .In  (In2[4:0]),
 
       .Out (op)
     );
     
     G_LTruncated uut2(
-      .In1 (In1),
-      .In2 (op),
-      
-      .Out (out1)
+        .In1 (In1),
+        .In2 (op[4:0]),
+
+        .Out (out1)
     );
     
     G_HTruncated uut3(
         .In1 (In1),
-        .In2 (op),
+        .In2 (op[4:0]),
         
         .Out (out2)
     );

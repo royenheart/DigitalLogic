@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
+// Engineer: 袁文斌
 // 
 // Create Date: 2021/11/01 15:10:55
 // Design Name: 
@@ -21,12 +21,10 @@
 
 // 低位截断，1表示低位截断
 module G_LTruncated(
-    In1,In2,Out
+        input wire [31:0]   In1,
+        input wire [4:0]    In2,
+        output wire [31:0]  Out
     );
-    
-    input [31:0] In1;
-    input [31:0] In2;
-    output [31:0] Out;
     
     wire [31:0] out1;
     

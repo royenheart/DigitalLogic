@@ -19,6 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
+// 32位ALU，版本1
 module G_ALU32_v1 (
         input wire  [31:0]   In1,
         input wire  [31:0]   In2,
@@ -99,7 +100,7 @@ module G_ALU32_v1 (
     // 移位运算 //
 
     //// 逻辑左移 ////
-    G_LShifter32 uut6_shifter32 (
+    G_LShifter32 uut6_lshifter32 (
         .In1    (In1),
         .In2    (In2),
         .Enable (Dout[5]),

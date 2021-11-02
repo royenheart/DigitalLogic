@@ -20,12 +20,10 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 module G_TLShifter32 (
-    In1,In2,Out
+    input wire [31:0]   In1,
+    input wire [4:0]    In2,
+    input wire [31:0]   Out
 );
-
-    input  [31:0]   In1;
-    input  [31:0]   In2;
-    output  [31:0]  Out;
     
     wire [31:0]  In1R;
     wire [31:0]  Outi[4:0];

@@ -21,23 +21,28 @@
 
 
 module movenum(
-        In,Out
+        input wire [4:0]   In,
+        output wire [5:0]  Out
     );
     
-    input [31:0] In;
-    output [31:0] Out;
-    
-    wire [31:0] out1;
+    wire [4:0] out1;
+    wire [4:0] out2;
     
     not (out1[0],In[0]);    not (out1[1],In[1]);    not (out1[2],In[2]);
     not (out1[3],In[3]);    not (out1[4],In[4]);
     
-    G_FullAdder5 uut(
-        .In1 (out1),
-        .In2 (1),
-        .CI  (0),
-        .Out (Out),
-        .CO  (Out[5])
+    or  (out2[0],In[0],out1[0]);
+    and (out2[1],In[1],out1[1]);
+    and (out2[2],In[2],out1[2]);
+    and (out2[3],In[3],out1[3]);
+    and (out2[4],In[4],out1[4]);
+
+    G_FullAdder5 uut (
+        .In1    (out1),
+        .In2    (out2),
+        .CI     (out2[1]),
+        .Out    (Out[4:0]),
+        .CO     (Out[5])
     );
     
 endmodule

@@ -21,12 +21,10 @@
 
 // 高位截断，0表示高位截断
 module G_HTruncated(
-    In1,In2,Out
+        input wire [31:0]   In1,
+        input wire [4:0]   In2,
+        input wire [31:0]   Out
     );
-    
-    input [31:0] In1;
-    input [31:0] In2;
-    output [31:0] Out;
     
     G_TRShifter32 uut(
         .In1 (In1),

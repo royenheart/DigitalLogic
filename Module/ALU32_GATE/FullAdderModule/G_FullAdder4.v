@@ -33,15 +33,6 @@ module G_FullAdder4(
     wire [3:0]     COi;
     wire [9:0]     CoElement; // The calculate elements of the COi
 
-    // genvar        i ;
-    // generate
-    //     for(i = 0; i <= 3; i = i + 1)
-    //     begin: GP_GEN
-    //         and andGi   (Gi[i],In1[i],In2[i]);
-    //         and andPi   (Pi[i],In1[i],In2[i]);
-    //     end
-    // endgenerate
-
     // Calculate Gi
 
     and (Gi[0],In1[0],In2[0]);
