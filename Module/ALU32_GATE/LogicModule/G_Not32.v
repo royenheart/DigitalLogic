@@ -19,6 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
+// 门级32位逻辑非
 module G_Not32(
         input  wire [31:0] In,
         input wire         Enable, // Enable Message, high as enable

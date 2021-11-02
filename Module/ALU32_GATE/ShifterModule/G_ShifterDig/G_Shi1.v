@@ -24,6 +24,7 @@ module G_Shi1 (
     input wire          B,
     output wire [31:0]  Out
 ); 
+
 	wire [31:0]  tmp1;
 	wire [31:0]  tmp2;
 	wire         notB;
@@ -125,6 +126,5 @@ module G_Shi1 (
 	and (tmp1[0], In[0], notB);
 	and (tmp2[0], In[1], B);
 	or(Out[0], tmp1[0], tmp2[0]);
-
 
 endmodule
