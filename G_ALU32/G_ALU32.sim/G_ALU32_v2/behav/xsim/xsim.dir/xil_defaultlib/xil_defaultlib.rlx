@@ -26,4 +26,4 @@ D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TLShifter32.v,1635834778,veri
 D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_TRShifter32.v,1635834189,verilog,,D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_Truncated.v,,G_TRShifter32,,,,,,,,
 D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/G_Truncated.v,1635836912,verilog,,D:/DigtalLogic/Module/ALU32_GATE/LogicModule/G_Xor32.v,,G_Truncated,,,,,,,,
 D:/DigtalLogic/Module/ALU32_GATE/TruncatedModule/movenum.v,1635837321,verilog,,D:/DigtalLogic/Sim/ALU32_GATE/G_ALU32_v2_TB.v,,movenum,,,,,,,,
-D:/DigtalLogic/Sim/ALU32_GATE/G_ALU32_v2_TB.v,1635838212,verilog,,,,G_ALU32_v2_TB,,,,,,,,
+D:/DigtalLogic/Sim/ALU32_GATE/G_ALU32_v2_TB.v,1635843824,verilog,,,,G_ALU32_v2_TB,,,,,,,,

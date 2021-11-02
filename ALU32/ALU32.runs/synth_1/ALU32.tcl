@@ -71,13 +71,10 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param checkpoint.writeSynthRtdsInDcp 1
-set_msg_config -id {Common 17-41} -limit 10000000
-set_msg_config -id {HDL 9-1061} -limit 100000
-set_msg_config -id {HDL 9-1654} -limit 100000
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
-create_project -in_memory -part xc7k70tfbv676-1
+create_project -in_memory -part xc7a200tfbg676-2
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
@@ -91,12 +88,15 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  D:/DigtalLogic/Module/ALU32/And32.v
+  D:/DigtalLogic/Module/ALU32/LogicModule/And32.v
   D:/DigtalLogic/Module/ALU32/Decoder32.v
-  D:/DigtalLogic/Module/ALU32/FullAdder32.v
-  D:/DigtalLogic/Module/ALU32/Not32.v
-  D:/DigtalLogic/Module/ALU32/Or32.v
-  D:/DigtalLogic/Module/ALU32/Xor32.v
+  D:/DigtalLogic/Module/ALU32/AdderModule/FullAdder32.v
+  D:/DigtalLogic/Module/ALU32/ShifterModule/LShifter32.v
+  D:/DigtalLogic/Module/ALU32/LogicModule/Not32.v
+  D:/DigtalLogic/Module/ALU32/LogicModule/Or32.v
+  D:/DigtalLogic/Module/ALU32/ShifterModule/RShifter32.v
+  D:/DigtalLogic/Module/ALU32/TruncatedModule/Truncated.v
+  D:/DigtalLogic/Module/ALU32/LogicModule/Xor32.v
   D:/DigtalLogic/Module/ALU32/ALU32.v
 }
 OPTRACE "Adding files" END { }
@@ -108,11 +108,14 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc D:/DigtalLogic/Constraints/ALU32/ALU32.xdc
+set_property used_in_implementation false [get_files D:/DigtalLogic/Constraints/ALU32/ALU32.xdc]
+
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top ALU32 -part xc7k70tfbv676-1
+synth_design -top ALU32 -part xc7a200tfbg676-2
 OPTRACE "synth_design" END { }
 if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"

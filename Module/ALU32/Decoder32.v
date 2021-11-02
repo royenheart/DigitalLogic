@@ -29,7 +29,10 @@ module Decoder32(
     assign    Out[0] = ~A0 & ~A1 & ~A2;
     assign    Out[1] = A0  & ~A1 & ~A2;
     assign    Out[2] = ~A0 & A1  & ~A2;
-    assign    Out[3] = ~A0 & ~A1 & A2;
-    assign    Out[4] = A0  & ~A1 & A2;
+    assign    Out[3] = A0 & A1 & ~A2;
+    assign    Out[4] = ~A0  & ~A1 & A2;
+    assign    Out[5] = A0  & ~A1 & A2;
+    assign    Out[6] = ~A0  & A1  & A2;
+    assign    Out[7] = A0  & A1  & A2;
 
 endmodule

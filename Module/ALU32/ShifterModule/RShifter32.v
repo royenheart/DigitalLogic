@@ -22,12 +22,12 @@
 module RShifter32 (
         input wire [31:0] In1,
         input wire [31:0] In2,
-        output wire [31:0] cout1
+        output wire [31:0] Out
     );
 
     wire [31:0] tmp;
 
     assign tmp = In1 >> In2[4:0];
-    assign cout1 = tmp;
+    assign Out = tmp;
 
 endmodule

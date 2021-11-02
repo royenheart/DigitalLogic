@@ -21,11 +21,11 @@
 
 module Not32(
         input wire [31:0]   In1, 
-        output wire [31:0]   cout1
+        output wire [31:0]   Out
     );
     
     integer i;
 
-    assign cout1 = ~In1;
+    assign Out = ~In1;
     
 endmodule

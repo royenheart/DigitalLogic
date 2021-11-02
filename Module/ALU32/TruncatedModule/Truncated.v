@@ -22,21 +22,26 @@
 module Truncated (
         input wire [31:0]  In1,
         input wire [31:0]  In2,
-        output wire [31:0] cout1
+        output wire [31:0] Out
     );
 
     reg [31:0] tmp;
     reg  i;
+
+    assign  Out = tmp;
 
     always @(*) 
     begin
         case (In2[31])
             1'b1: 
             begin
-                i = 32 - In2[4:0];
+                tmp = ( In1 << (32-In2[4:0]) ) >> (32-In2[4:0]);
             end
             1'b0: 
-            default: 
+            begin
+                tmp = ( In1 >> (32-In2[4:0]) );
+            end
+            default: tmp = 0;
         endcase    
     end
 

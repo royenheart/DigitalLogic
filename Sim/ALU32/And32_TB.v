@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 2021/10/29 02:01:04
+// Create Date: 2021/10/29 01:44:46
 // Design Name: 
-// Module Name: ALU32_TestBench
+// Module Name: ALU32
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -19,23 +19,28 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module And32_TB;
+module And32_TB;     
 
 // And32 Parameters
 parameter PERIOD  = 10;
 
 // And32 Inputs
-wire   [31:0]  In1                          = 32'd324 ;
-wire   [31:0]  In2                          = 32'd563 ;
+reg   [31:0]  In1                          = 0 ;
+reg   [31:0]  In2                          = 0 ;
 
 // And32 Outputs
-wire  [31:0]  cout1                        ;
+wire  [31:0]  Out                          ;
 
 And32  u_And32 (
-    .In1                     ( In1    [31:0] ),
-    .In2                     ( In2    [31:0] ),
+    .In1                     ( In1  [31:0] ),
+    .In2                     ( In2  [31:0] ),
 
-    .cout1                   ( cout1  [31:0] )
+    .Out                     ( Out  [31:0] )
 );
+
+initial
+begin
+    $finish;
+end
 
 endmodule

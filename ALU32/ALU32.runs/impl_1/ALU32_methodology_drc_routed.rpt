@@ -1,12 +1,12 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date         : Fri Oct 29 14:29:16 2021
+| Date         : Tue Nov  2 23:33:04 2021
 | Host         : LAPTOP-TDKNUURL running 64-bit major release  (build 9200)
 | Command      : report_methodology -file ALU32_methodology_drc_routed.rpt -pb ALU32_methodology_drc_routed.pb -rpx ALU32_methodology_drc_routed.rpx
 | Design       : ALU32
-| Device       : xc7k70tfbv676-1
-| Speed File   : -1
+| Device       : xc7a200tfbg676-2
+| Speed File   : -2
 | Design State : Fully Routed
 -----------------------------------------------------------------------------------------------------------------------------------------------------
 

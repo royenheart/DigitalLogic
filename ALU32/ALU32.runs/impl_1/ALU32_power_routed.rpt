@@ -1,11 +1,11 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date             : Fri Oct 29 14:29:17 2021
+| Date             : Tue Nov  2 23:33:05 2021
 | Host             : LAPTOP-TDKNUURL running 64-bit major release  (build 9200)
 | Command          : report_power -file ALU32_power_routed.rpt -pb ALU32_power_summary_routed.pb -rpx ALU32_power_routed.rpx
 | Design           : ALU32
-| Device           : xc7k70tfbv676-1
+| Device           : xc7a200tfbg676-2
 | Design State     : routed
 | Grade            : commercial
 | Process          : typical
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 18.127       |
+| Total On-Chip Power (W)  | 24.154       |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 17.973       |
-| Device Static (W)        | 0.154        |
+| Dynamic (W)              | 23.825       |
+| Device Static (W)        | 0.329        |
 | Effective TJA (C/W)      | 1.9          |
-| Max Ambient (C)          | 50.9         |
-| Junction Temperature (C) | 59.1         |
+| Max Ambient (C)          | 39.8         |
+| Junction Temperature (C) | 70.2         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,12 +52,15 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     1.532 |      322 |       --- |             --- |
-|   LUT as Logic |     1.532 |      263 |     41000 |            0.64 |
-| Signals        |     2.465 |      390 |       --- |             --- |
-| I/O            |    13.976 |      101 |       300 |           33.67 |
-| Static Power   |     0.154 |          |           |                 |
-| Total          |    18.127 |          |           |                 |
+| Slice Logic    |     1.750 |      427 |       --- |             --- |
+|   LUT as Logic |     1.677 |      342 |    133800 |            0.26 |
+|   CARRY4       |     0.046 |        9 |     33450 |            0.03 |
+|   F7/F8 Muxes  |     0.027 |       32 |    133800 |            0.02 |
+|   Others       |     0.000 |        2 |       --- |             --- |
+| Signals        |     3.411 |      429 |       --- |             --- |
+| I/O            |    18.664 |      101 |       400 |           25.25 |
+| Static Power   |     0.329 |          |           |                 |
+| Total          |    24.154 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -67,19 +70,18 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     4.358 |       4.269 |      0.088 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     1.136 |       1.122 |      0.014 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     5.619 |       5.433 |      0.185 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     1.557 |       1.506 |      0.052 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vcco18    |       1.800 |     6.492 |       6.491 |      0.001 |       NA    | Unspecified | NA         |
+| Vcco18    |       1.800 |     8.717 |       8.712 |      0.005 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| Vccbram   |       1.000 |     0.002 |       0.000 |      0.002 |       NA    | Unspecified | NA         |
+| Vccbram   |       1.000 |     0.006 |       0.000 |      0.006 |       NA    | Unspecified | NA         |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
-| MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |       NA    | Unspecified | NA         |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 
@@ -132,10 +134,11 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+-------+-----------+
-| Name  | Power (W) |
-+-------+-----------+
-| ALU32 |    17.973 |
-+-------+-----------+
++----------------+-----------+
+| Name           | Power (W) |
++----------------+-----------+
+| ALU32          |    23.825 |
+|   uut_fadder32 |     0.205 |
++----------------+-----------+
 
 

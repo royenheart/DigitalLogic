@@ -19,13 +19,12 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
 module And32(
         input wire [31:0] In1,
         input wire [31:0] In2,
-        output wire [31:0] cout1
+        output wire [31:0] Out
     );
     
-    assign cout1 = In1 & In2;
+    assign Out = In1 & In2;
 
 endmodule

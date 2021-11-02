@@ -2,50 +2,67 @@
 
 ## 现有项目
 
-1. ALU32
-- RTL设计32位ALU
-- - 完善功能中。。。
-2. G_ALU32
-- 门级设计32位ALU
-- - 功能已实现，待完善。。。
+1. ALU32 - RTL设计32位ALU
+- 功能已实现，待测试完善
+2. G_ALU32 - 门级设计32位ALU
+- 功能已实现，待测试完善
 
 ## TODO
 
-- 精简设计
 - 优化时延
-- 实现优先编码器
-- 自动项目打包工具
 - 修改bug（testbench读写文件bug）
-- 制作说明书
 - 规范代码
 
 ## 文档结构
 
 ```shell
 DigitalLogic
-├─ALU32
-│  └─ALU32.xpr - 项目配置信息文件
-├─G_ALU32
-│  └─G_ALU32.xpr - 项目配置信息文件
-├─Draft - 草稿、弃用模块
-├─ImplementationSchematic - 执行阶段电路图解
-│  └─ALU32
-├─ImplementationTiming - 执行阶段电路时延信息
-│  └─ALU32
-├─Module - 项目源文件
+├─ALU32 - 项目信息配置
+│  └─ALU32.xpr
+├─Constraints - 管脚约束文件
+│  ├─ALU32
+│  └─G_ALU32
+├─Draft - 弃用模块，草稿箱
+├─G_ALU32 - 项目信息配置
+│  └─G_ALU32.xpr
+├─Module - 模块文件
+│  ├─ALU32
+│  │  ├─AdderModule
+│  │  ├─LogicModule
+│  │  ├─ShifterModule
+│  │  └─TruncatedModule
+│  └─ALU32_GATE
+│      ├─FullAdderModule
+│      ├─LogicModule
+│      ├─ShifterModule
+│      │  └─G_ShifterDig
+│      └─TruncatedModule
+├─Schematic - 电路图解
+│  ├─ImplementationSchematic - Implementation阶段电路图解
+│  │  ├─ALU32
+│  │  └─G_ALU32
+│  ├─RtlSchematic - Rtl阶段电路图解
+│  │  ├─ALU32
+│  │  └─G_ALU32
+│  └─SynthesisSchematic - Synthesis阶段电路图解
+│      ├─ALU32
+│      └─G_ALU32
+├─Sim - TestBench文件
 │  ├─ALU32
 │  └─ALU32_GATE
-├─RtlSchematic - rtl仿真阶段电路图解
-│  └─ALU32
-├─Sim - 仿真文件
+├─TestData - 测试数据集
 │  ├─ALU32
-│  └─ALU32_GATE
-├─SynthesisSchematic - Synthesis阶段电路图解
-│  └─ALU32
-├─TestData - 测试数据
-│  └─ALU32
-└─WaveFormConfigFile - simulation阶段输入输出波形图
-    └─ALU32
+│  └─G_ALU32
+├─Timing - 时延数据
+│  ├─ImplementationTiming - Implementation时延数据
+│  │  ├─ALU32
+│  │  └─G_ALU32
+│  └─SynthesisTiming - Synthesis时延数据
+│      ├─ALU32
+│      └─G_ALU32
+└─WaveFormConfigFile - 输入输出波形图
+    ├─ALU32
+    └─G_ALU32
 ```
 
 ## 如何运行

@@ -56,9 +56,11 @@ module G_Truncated(
         .Out (out2)
     );
     
+    // 添加使能信号
+    
     buf (tmp1 , In2[31]);
-    not (tmp2 , direction);
     and (direction, tmp1, Enable);
+    not (tmp2 , direction);
     and (fdirection, tmp2, Enable);
     
     and(out3[0],out1[0],direction);and(out3[1],out1[1],direction);and(out3[2],out1[2],direction);and(out3[3],out1[3],direction);

@@ -9,11 +9,14 @@ Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
 Compiling module xil_defaultlib.Decoder32
-Compiling module xil_defaultlib.Xor32
-Compiling module xil_defaultlib.FullAdder32
 Compiling module xil_defaultlib.And32
 Compiling module xil_defaultlib.Or32
+Compiling module xil_defaultlib.Xor32
 Compiling module xil_defaultlib.Not32
+Compiling module xil_defaultlib.FullAdder32
+Compiling module xil_defaultlib.LShifter32
+Compiling module xil_defaultlib.RShifter32
+Compiling module xil_defaultlib.Truncated
 Compiling module xil_defaultlib.ALU32
 Compiling module xil_defaultlib.ALU32_TB
 Compiling module xil_defaultlib.glbl

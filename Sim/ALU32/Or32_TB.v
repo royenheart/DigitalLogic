@@ -1,11 +1,11 @@
-`timescale  1ns / 1ps  
+`timescale  1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
+// Engineer: 谢皓泽
 // 
-// Create Date: 2021/10/29 02:01:04
+// Create Date: 2021/10/28 15:52:59
 // Design Name: 
-// Module Name: ALU32_TestBench
+// Module Name: And32
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -19,23 +19,28 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-module Or32_TB;        
+module Or32_TB;
 
-// Or32 Parameters     
+// Or32 Parameters
 parameter PERIOD  = 10;
 
 // Or32 Inputs
-wire   [31:0]  In1                          = 32'd10 ;
-wire   [31:0]  In2                          = 32'd2324 ;
+reg   [31:0]  In1                          = 0 ;
+reg   [31:0]  In2                          = 0 ;
 
 // Or32 Outputs
-wire  [31:0]  cout1                        ;
+wire  [31:0]  Out                          ;
 
 Or32  u_Or32 (
-    .In1                     ( In1    [31:0] ),
-    .In2                     ( In2    [31:0] ),
+    .In1                     ( In1  [31:0] ),
+    .In2                     ( In2  [31:0] ),
 
-    .cout1                   ( cout1  [31:0] )
+    .Out                     ( Out  [31:0] )
 );
+
+initial
+begin
+    $finish;
+end
 
 endmodule
