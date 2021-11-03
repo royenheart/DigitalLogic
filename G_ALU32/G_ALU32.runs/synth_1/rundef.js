@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log G_ALU32_v2.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source G_ALU32_v2.tcl" );
+         "-log ALU_DISPLAY.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ALU_DISPLAY.tcl" );
 
 
 

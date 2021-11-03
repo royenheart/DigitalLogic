@@ -3,15 +3,19 @@
 ## 现有项目
 
 1. ALU32 - RTL设计32位ALU
-- 功能已实现，待测试完善
+- 功能已实现，测试成功
 2. G_ALU32 - 门级设计32位ALU
-- 功能已实现，待测试完善
+- 功能已实现，上板测试成功
+
+## 项目、实验测试环境
+
+- fpga型号：xc7a200tfbg676-2  
+- 实验箱型号：LS-CPU-EXB-002  
+- 制造厂商：[龙芯中科](https://www.loongson.cn/)
 
 ## TODO
 
-- 优化时延
-- 修改bug（testbench读写文件bug）
-- 规范代码
+- 使用Verilog实现1024位大数乘法，并正确搭载在fpga上
 
 ## 文档结构
 
@@ -71,6 +75,10 @@ DigitalLogic
 - 于vivado中打开对应项目的配置信息文件(xxx.xpr)
 - 推荐使用vscode作为verilog文件的编辑器
 
+## 额外说明
+
+G_ALU项目模块文件中使用的`lcd_module.dcp`文件为实验箱配套的触摸屏模块，用于实验箱触摸屏的使用以及调试。并非本团队所属。
+
 ## 团队成员
 
 ### 协作项目
@@ -83,3 +91,8 @@ DigitalLogic
 ### 咨询
 
 请发送邮件至[邮箱](mailto:royenheart@outlook.com)咨询，注明来意和身份及证明
+
+## 致谢
+
+感谢[兰州大学](http://lzu.edu.cn)和[龙芯中科](https://www.loongson.cn/)提供的fpga开发实验箱  
+感谢项目协作成员的合作
