@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="Impl_G_ALU32_v2" LaunchPart="xc7a200tfbg676-2" LaunchTime="1635957053">
+  <File Type="ROUTE-PWR" Name="G_ALU32_v2_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="G_ALU32_v2.tcl"/>
+  <File Type="BITSTR-MMI" Name="G_ALU32_v2.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="G_ALU32_v2_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="G_ALU32_v2_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="G_ALU32_v2_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="G_ALU32_v2_reports.tcl"/>
+  <File Type="OPT-TIMING" Name="G_ALU32_v2_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="G_ALU32_v2_opt.dcp"/>
+  <File Type="OPT-DRC" Name="G_ALU32_v2_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="G_ALU32_v2.hwdef"/>
+  <File Type="PWROPT-DCP" Name="G_ALU32_v2_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="G_ALU32_v2_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="G_ALU32_v2_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="G_ALU32_v2_placed.dcp"/>
+  <File Type="PLACE-IO" Name="G_ALU32_v2_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="G_ALU32_v2_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="G_ALU32_v2_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="G_ALU32_v2_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="G_ALU32_v2_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="G_ALU32_v2_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="G_ALU32_v2_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="G_ALU32_v2.bin"/>
+  <File Type="PLACE-TIMING" Name="G_ALU32_v2_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="G_ALU32_v2_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="G_ALU32_v2.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="G_ALU32_v2_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="G_ALU32_v2_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="G_ALU32_v2_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="G_ALU32_v2.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="G_ALU32_v2_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="G_ALU32_v2_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="G_ALU32_v2_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="G_ALU32_v2_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="G_ALU32_v2_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="G_ALU32_v2_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="G_ALU32_v2_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="G_ALU32_v2_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="G_ALU32_v2_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="G_ALU32_v2_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="G_ALU32_v2_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="G_ALU32_v2_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="G_ALU32_v2_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="G_ALU32_v2_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="G_ALU32_v2_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="G_ALU32_v2_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="G_ALU32_v2_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="G_ALU32_v2_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="G_ALU32_v2_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="G_ALU32_v2_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="G_ALU32_v2_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="G_ALU32_v2_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="G_ALU32_v2_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="G_ALU32_v2_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="G_ALU32_v2_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="G_ALU32_v2_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="G_ALU32_v2_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="G_ALU32_v2.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="G_ALU32_v2_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="G_ALU32_v2_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="G_ALU32_v2.nky"/>
+  <File Type="BITSTR-BMM" Name="G_ALU32_v2_bd.bmm"/>
+  <File Type="PDI-FILE" Name="G_ALU32_v2.pdi"/>
+  <File Type="RCFI_FILE" Name="G_ALU32_v2.rcfi"/>
+  <File Type="CFI_FILE" Name="G_ALU32_v2.cfi"/>
+  <File Type="RNPI_FILE" Name="G_ALU32_v2.rnpi"/>
+  <File Type="NPI_FILE" Name="G_ALU32_v2.npi"/>
+  <File Type="RBD_FILE" Name="G_ALU32_v2.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="G_ALU32_v2.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="G_ALU32_v2.sysdef"/>
+  <File Type="BG-BGN" Name="G_ALU32_v2.bgn"/>
+  <File Type="BG-DRC" Name="G_ALU32_v2.drc"/>
+  <File Type="RDI-RDI" Name="G_ALU32_v2.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../Module/ALU32_GATE/LogicModule/G_And32.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Module/ALU32_GATE/G_Decoder32.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Module/ALU32_GATE/FullAdderModule/G_FullAdder32_48.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Module/ALU32_GATE/FullAdderModule/G_FullAdder5.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Module/ALU32_GATE/FullAdderModule/G_FullAdder8.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Module/ALU32_GATE/TruncatedModule/G_HTruncated.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Module/ALU32_GATE/ShifterModule/G_LShifter32.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Module/ALU32_GATE/TruncatedModule/G_LTruncated.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Module/ALU32_GATE/LogicModule/G_Not32.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Module/ALU32_GATE/LogicModule/G_Or32.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Module/ALU32_GATE/ShifterModule/G_RShifter32.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Module/ALU32_GATE/G_Reverse.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Module/ALU32_GATE/ShifterModule/G_ShifterDig/G_Shi1.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Module/ALU32_GATE/ShifterModule/G_ShifterDig/G_Shi16.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Module/ALU32_GATE/ShifterModule/G_ShifterDig/G_Shi2.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Module/ALU32_GATE/ShifterModule/G_ShifterDig/G_Shi4.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Module/ALU32_GATE/ShifterModule/G_ShifterDig/G_Shi8.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Module/ALU32_GATE/TruncatedModule/G_TLShifter32.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Module/ALU32_GATE/TruncatedModule/G_TRShifter32.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Module/ALU32_GATE/TruncatedModule/G_Truncated.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Module/ALU32_GATE/LogicModule/G_Xor32.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Module/ALU32_GATE/TruncatedModule/movenum.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Module/ALU32_GATE/G_ALU32_v2.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Module/ALU32_GATE/Display/lcd_module.dcp">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Module/ALU32_GATE/Display/ALU_DISPLAY.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Module/ALU32_GATE/FullAdderModule/G_FullAdder32_ALL.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Module/ALU32_GATE/G_ALU32_v3.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Module/ALU32_GATE/FullAdderModule/G_FullAdder32_84.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Module/ALU32_GATE/FullAdderModule/G_FullAdder4.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Module/ALU32_GATE/G_ALU32_v1.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="G_ALU32_v2"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../Constraints/G_ALU32/G_ALU32_v1_01.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

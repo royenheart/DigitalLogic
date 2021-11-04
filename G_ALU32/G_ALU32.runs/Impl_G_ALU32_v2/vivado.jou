@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Nov  4 00:31:04 2021
+# Process ID: 32452
+# Current directory: D:/DigtalLogic/G_ALU32/G_ALU32.runs/Impl_G_ALU32_v2
+# Command line: vivado.exe -log G_ALU32_v2.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source G_ALU32_v2.tcl -notrace
+# Log file: D:/DigtalLogic/G_ALU32/G_ALU32.runs/Impl_G_ALU32_v2/G_ALU32_v2.vdi
+# Journal file: D:/DigtalLogic/G_ALU32/G_ALU32.runs/Impl_G_ALU32_v2\vivado.jou
+#-----------------------------------------------------------
+source G_ALU32_v2.tcl -notrace

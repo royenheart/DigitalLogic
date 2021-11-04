@@ -32,7 +32,7 @@ output ct_scl,
 output ct_rstn
 );
 
- //-----{调用加法模块}begin
+ //-----{调用ALU模块}begin
  reg [31:0] In1;
  reg [31:0] In2;
  reg [2:0]  A;
@@ -51,7 +51,7 @@ output ct_rstn
  );
  assign CI = sw_cin;
  assign led_cout = Out;
- //-----{调用加法模块}end
+ //-----{调用ALU模块}end
 
  //---------------------{调用触摸屏模块}begin--------------------//
  //-----{实例化触摸屏}begin

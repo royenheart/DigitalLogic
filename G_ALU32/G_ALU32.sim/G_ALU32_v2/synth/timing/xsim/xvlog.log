@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/G_ALU32/G_ALU32.sim/G_ALU32_v2/synth/timing/xsim/G_ALU32_v2_TB_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module G_ALU32_v2
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/Sim/ALU32_GATE/G_ALU32_v2_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module G_ALU32_v2_TB
