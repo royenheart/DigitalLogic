@@ -126,6 +126,7 @@ set rc [catch {
   create_msg_db init_design.pb
   set_param checkpoint.writeSynthRtdsInDcp 1
   set_param chipscope.maxJobs 4
+  set_param synth.incrementalSynthesisCache C:/Users/Royen/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-23816-LAPTOP-TDKNUURL/incrSyn
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a200tfbg676-2
   set_property design_mode GateLvl [current_fileset]

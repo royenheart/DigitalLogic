@@ -1,7 +1,7 @@
 // Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-// Date        : Thu Nov  4 00:33:37 2021
+// Date        : Tue Nov  9 14:56:57 2021
 // Host        : LAPTOP-TDKNUURL running 64-bit major release  (build 9200)
 // Command     : write_verilog -mode timesim -nolib -sdf_anno true -force -file
 //               D:/DigtalLogic/G_ALU32/G_ALU32.sim/G_ALU32_v2/synth/timing/xsim/G_ALU32_v2_TB_time_synth.v

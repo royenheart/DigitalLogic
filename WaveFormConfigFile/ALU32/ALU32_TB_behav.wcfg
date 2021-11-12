@@ -17,9 +17,9 @@
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="340"></NameColumnWidth>
-      <ValueColumnWidth column_width="155"></ValueColumnWidth>
+      <ValueColumnWidth column_width="150"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="33" />
+   <WVObjectSize size="31" />
    <wvobject fp_name="/ALU32_TB/T" type="array">
       <obj_property name="ElementShortName">T[2:0]</obj_property>
       <obj_property name="ObjectShortName">T[2:0]</obj_property>
@@ -95,14 +95,6 @@
    <wvobject fp_name="/ALU32_TB/CO" type="logic">
       <obj_property name="ElementShortName">CO</obj_property>
       <obj_property name="ObjectShortName">CO</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ALU32_TB/data" type="array">
-      <obj_property name="ElementShortName">data[31:0]</obj_property>
-      <obj_property name="ObjectShortName">data[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/ALU32_TB/code" type="array">
-      <obj_property name="ElementShortName">code[31:0]</obj_property>
-      <obj_property name="ObjectShortName">code[31:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/ALU32_TB/getDataTimes" type="array">
       <obj_property name="ElementShortName">getDataTimes[31:0]</obj_property>

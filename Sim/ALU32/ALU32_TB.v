@@ -53,10 +53,10 @@ wire  CO                                   ;
 
 // File read and open
 
-integer data; // 数据文件句柄
-integer code; // 数据文件读取后返回参数
 integer getDataTimes; // 数据读取次数(1000次)
 integer preTime; // 上一次读取数据组的时间
+integer i;
+reg [31:0] da[12000:0];
 
 // Judge if the data matches the every output of the ALU32;
 
@@ -95,41 +95,63 @@ initial
 begin
     preTime = 0;
     getDataTimes = 1;
-    // 需要修复无法使用相对路径的bug
-    // 推测原因：
-    // 1. 使用\而不是/
-    // 2. vivado进行simulation编译运行时，根目录并非此文件目录
-    data = $fopen("D:\\DigtalLogic\\TestData\\G_ALU32\\data01.txt","r");  // 请改成本机data01.txt数据文件存放的绝对路径  
-    code = $fscanf(data,"%h",In1Data);
-    code = $fscanf(data,"%h",In2Data);
-    code = $fscanf(data,"%h",CIData);
-    code = $fscanf(data,"%h",matchAnd);
-    code = $fscanf(data,"%h",matchOr);
-    code = $fscanf(data,"%h",matchXor);
-    code = $fscanf(data,"%h",matchNot);
-    code = $fscanf(data,"%h",matchAdd);
-    code = $fscanf(data,"%h",matchCO);
-    code = $fscanf(data,"%h",matchLShifter);
-    code = $fscanf(data,"%h",matchRShifter);
-    code = $fscanf(data,"%h",matchTruncated);
+    // 若无法读取请修改一下相对路径
+    $readmemh("../../../../../TestData/G_ALU32/data01.txt", da);
+    i = 0;
+    In1Data = da[i];
+    i = i + 1;
+    In2Data = da[i];
+    i = i + 1;
+    CIData  = da[i];
+    i = i + 1;
+    matchAnd = da[i];
+    i = i + 1;
+    matchOr = da[i];
+    i = i + 1;
+    matchXor = da[i];
+    i = i + 1;
+    matchNot = da[i];
+    i = i + 1;
+    matchAdd = da[i];
+    i = i + 1;
+    matchCO = da[i];
+    i = i + 1;
+    matchLShifter = da[i];
+    i = i + 1;
+    matchRShifter = da[i];
+    i = i + 1;
+    matchTruncated = da[i];
+    i = i + 1;
 end
 
 // 一次周期（160时间单位）读取下一组数据
 always 
 begin
     #160;
-    code = $fscanf(data,"%h",In1Data);
-    code = $fscanf(data,"%h",In2Data);
-    code = $fscanf(data,"%h",CIData);
-    code = $fscanf(data,"%h",matchAnd);
-    code = $fscanf(data,"%h",matchOr);
-    code = $fscanf(data,"%h",matchXor);
-    code = $fscanf(data,"%h",matchNot);
-    code = $fscanf(data,"%h",matchAdd);
-    code = $fscanf(data,"%h",matchCO);
-    code = $fscanf(data,"%h",matchLShifter);
-    code = $fscanf(data,"%h",matchRShifter);
-    code = $fscanf(data,"%h",matchTruncated);
+    In1Data = da[i];
+    i = i + 1;
+    In2Data = da[i];
+    i = i + 1;
+    CIData  = da[i];
+    i = i + 1;
+    matchAnd = da[i];
+    i = i + 1;
+    matchOr = da[i];
+    i = i + 1;
+    matchXor = da[i];
+    i = i + 1;
+    matchNot = da[i];
+    i = i + 1;
+    matchAdd = da[i];
+    i = i + 1;
+    matchCO = da[i];
+    i = i + 1;
+    matchLShifter = da[i];
+    i = i + 1;
+    matchRShifter = da[i];
+    i = i + 1;
+    matchTruncated = da[i];
+    i = i + 1;
 end
 
 // 每次周期结束判断是否退出
@@ -142,7 +164,6 @@ begin
         getDataTimes = getDataTimes + 1;
         if (getDataTimes > 1000)
         begin
-            $fclose(data);
             $finish;
         end 
     end    

@@ -2,14 +2,13 @@
 # Webtalk v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Thu Nov  4 00:36:06 2021
-# Process ID: 32568
+# Start of session at: Tue Nov  9 14:55:19 2021
+# Process ID: 2896
 # Current directory: D:/DigtalLogic/G_ALU32/G_ALU32.sim/G_ALU32_v2/synth/timing/xsim
 # Command line: wbtcv.exe -mode batch -source D:/DigtalLogic/G_ALU32/G_ALU32.sim/G_ALU32_v2/synth/timing/xsim/xsim.dir/G_ALU32_v2_TB_time_synth/webtalk/xsim_webtalk.tcl -notrace
 # Log file: D:/DigtalLogic/G_ALU32/G_ALU32.sim/G_ALU32_v2/synth/timing/xsim/webtalk.log
 # Journal file: D:/DigtalLogic/G_ALU32/G_ALU32.sim/G_ALU32_v2/synth/timing/xsim\webtalk.jou
 #-----------------------------------------------------------
 source D:/DigtalLogic/G_ALU32/G_ALU32.sim/G_ALU32_v2/synth/timing/xsim/xsim.dir/G_ALU32_v2_TB_time_synth/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] 'D:/DigtalLogic/G_ALU32/G_ALU32.sim/G_ALU32_v2/synth/timing/xsim/xsim.dir/G_ALU32_v2_TB_time_synth/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Nov  4 00:36:14 2021. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2021.1/doc/webtalk_introduction.html.
-webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:08 . Memory (MB): peak = 86.312 ; gain = 4.625
-INFO: [Common 17-206] Exiting Webtalk at Thu Nov  4 00:36:14 2021...
+INFO: [Common 17-186] 'D:/DigtalLogic/G_ALU32/G_ALU32.sim/G_ALU32_v2/synth/timing/xsim/xsim.dir/G_ALU32_v2_TB_time_synth/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Tue Nov  9 14:55:24 2021. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2021.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Tue Nov  9 14:55:24 2021...

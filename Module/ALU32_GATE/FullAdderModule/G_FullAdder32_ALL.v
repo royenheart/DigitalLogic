@@ -107,6 +107,7 @@ module G_FullAdder32_ALL (
 
     // Calculate COi's or elements
 
+    and (CoElement[0],Pi[0],CI);
     and (CoElement[1],Pi[1],Gi[0]);
     and (CoElement[2],CI,Pi[1],Pi[0]);
     and (CoElement[3],Pi[2],Gi[1]);
@@ -674,38 +675,38 @@ module G_FullAdder32_ALL (
 
     // Calculate Out 
 
-    xor (Out[0],In1[0],In2[0],CI);
-    xor (Out[1],In1[1],In2[1],COi[0]);    
-    xor (Out[2],In1[2],In2[2],COi[1]);    
-    xor (Out[3],In1[3],In2[3],COi[2]);    
-    xor (Out[4],In1[4],In2[4],COi[3]);    
-    xor (Out[5],In1[5],In2[5],COi[4]);    
-    xor (Out[6],In1[6],In2[6],COi[5]);    
-    xor (Out[7],In1[7],In2[7],COi[6]);    
-    xor (Out[8],In1[8],In2[8],COi[7]);    
-    xor (Out[9],In1[9],In2[9],COi[8]);    
-    xor (Out[10],In1[10],In2[10],COi[9]); 
-    xor (Out[11],In1[11],In2[11],COi[10]);
-    xor (Out[12],In1[12],In2[12],COi[11]);
-    xor (Out[13],In1[13],In2[13],COi[12]);
-    xor (Out[14],In1[14],In2[14],COi[13]);
-    xor (Out[15],In1[15],In2[15],COi[14]);
-    xor (Out[16],In1[16],In2[16],COi[15]);
-    xor (Out[17],In1[17],In2[17],COi[16]);
-    xor (Out[18],In1[18],In2[18],COi[17]);
-    xor (Out[19],In1[19],In2[19],COi[18]);
-    xor (Out[20],In1[20],In2[20],COi[19]);
-    xor (Out[21],In1[21],In2[21],COi[20]);
-    xor (Out[22],In1[22],In2[22],COi[21]);
-    xor (Out[23],In1[23],In2[23],COi[22]);
-    xor (Out[24],In1[24],In2[24],COi[23]);
-    xor (Out[25],In1[25],In2[25],COi[24]);
-    xor (Out[26],In1[26],In2[26],COi[25]);
-    xor (Out[27],In1[27],In2[27],COi[26]);
-    xor (Out[28],In1[28],In2[28],COi[27]);
-    xor (Out[29],In1[29],In2[29],COi[28]);
-    xor (Out[30],In1[30],In2[30],COi[29]);
-    xor (Out[31],In1[31],In2[31],COi[30]);
+    xor (OutTmp[0],In1[0],In2[0],CI);
+    xor (OutTmp[1],In1[1],In2[1],COi[0]);    
+    xor (OutTmp[2],In1[2],In2[2],COi[1]);    
+    xor (OutTmp[3],In1[3],In2[3],COi[2]);    
+    xor (OutTmp[4],In1[4],In2[4],COi[3]);    
+    xor (OutTmp[5],In1[5],In2[5],COi[4]);    
+    xor (OutTmp[6],In1[6],In2[6],COi[5]);    
+    xor (OutTmp[7],In1[7],In2[7],COi[6]);    
+    xor (OutTmp[8],In1[8],In2[8],COi[7]);    
+    xor (OutTmp[9],In1[9],In2[9],COi[8]);    
+    xor (OutTmp[10],In1[10],In2[10],COi[9]); 
+    xor (OutTmp[11],In1[11],In2[11],COi[10]);
+    xor (OutTmp[12],In1[12],In2[12],COi[11]);
+    xor (OutTmp[13],In1[13],In2[13],COi[12]);
+    xor (OutTmp[14],In1[14],In2[14],COi[13]);
+    xor (OutTmp[15],In1[15],In2[15],COi[14]);
+    xor (OutTmp[16],In1[16],In2[16],COi[15]);
+    xor (OutTmp[17],In1[17],In2[17],COi[16]);
+    xor (OutTmp[18],In1[18],In2[18],COi[17]);
+    xor (OutTmp[19],In1[19],In2[19],COi[18]);
+    xor (OutTmp[20],In1[20],In2[20],COi[19]);
+    xor (OutTmp[21],In1[21],In2[21],COi[20]);
+    xor (OutTmp[22],In1[22],In2[22],COi[21]);
+    xor (OutTmp[23],In1[23],In2[23],COi[22]);
+    xor (OutTmp[24],In1[24],In2[24],COi[23]);
+    xor (OutTmp[25],In1[25],In2[25],COi[24]);
+    xor (OutTmp[26],In1[26],In2[26],COi[25]);
+    xor (OutTmp[27],In1[27],In2[27],COi[26]);
+    xor (OutTmp[28],In1[28],In2[28],COi[27]);
+    xor (OutTmp[29],In1[29],In2[29],COi[28]);
+    xor (OutTmp[30],In1[30],In2[30],COi[29]);
+    xor (OutTmp[31],In1[31],In2[31],COi[30]);
 
     // And Enable Message to Out
 
