@@ -133,13 +133,13 @@ always @(posedge clk)
  6'd1 :
  begin
    display_valid <= 1'b1;
-   display_name <= "Oper1";
+   display_name <= "OPER";
    display_value <= In1;
  end
  6'd2 :
  begin
    display_valid <= 1'b1;
-   display_name <= "Oper2";
+   display_name <= "OPER";
    display_value <= In2;
  end
  6'd3 :
@@ -157,7 +157,7 @@ always @(posedge clk)
  6'd5 :
  begin
    display_valid <= 1'b1;
-   display_name <= "Out";
+   display_name <= "OUT";
    display_value <= Out;
  end
  6'd6 :
