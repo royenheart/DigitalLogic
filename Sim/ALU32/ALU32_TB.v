@@ -125,7 +125,7 @@ begin
 end
 
 // 一次周期（160时间单位）读取下一组数据
-always 
+always
 begin
     #160;
     In1Data = da[i];

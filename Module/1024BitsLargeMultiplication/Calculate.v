@@ -24,4 +24,14 @@ module Calculate (
     
 );
     
+    reg clk;
+
+    initial 
+    begin
+        forever 
+        begin
+            #10 clk = ~clk;    
+        end    
+    end
+
 endmodule
