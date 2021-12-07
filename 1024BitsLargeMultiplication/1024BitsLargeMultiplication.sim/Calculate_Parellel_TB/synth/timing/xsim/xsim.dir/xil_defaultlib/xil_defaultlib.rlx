@@ -1,0 +1,9 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.sim/Calculate_Parellel_TB/synth/timing/xsim/Calculate_Parellel_TB_time_synth.v,1638452783,verilog,,D:/DigitalLogic/Module/1024BitsLargeMultiplication/Calculate_Parellel.v,,Calculate;SerialMul;glbl,,,,,,,,
+D:/DigitalLogic/Module/1024BitsLargeMultiplication/Algorithm/ParallelMul.v,1638451836,verilog,,D:/DigitalLogic/Module/1024BitsLargeMultiplication/Algorithm/SerialMul256.v,,ParallelMul,,,,,,,,
+D:/DigitalLogic/Module/1024BitsLargeMultiplication/Algorithm/SerialMul256.v,1638409328,verilog,,D:/DigitalLogic/Sim/1024BitsLargeMultiplication/Calculate_Parellel_TB.v,,SerialMul256,,,,,,,,
+D:/DigitalLogic/Module/1024BitsLargeMultiplication/Calculate_Parellel.v,1638409071,verilog,,D:/DigitalLogic/Module/1024BitsLargeMultiplication/Algorithm/ParallelMul.v,,Calculate_Parellel,,,,,,,,
+D:/DigitalLogic/Sim/1024BitsLargeMultiplication/Calculate_Parellel_TB.v,1638409524,verilog,,,,Calculate_Parellel_TB,,,,,,,,

@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"Test_Parallel_TB_time_impl.v" \
+"../../../../../../Sim/1024BitsLargeMultiplication/Test_Parallel_TB.v" \
+
+# Do not sort compile order
+nosort

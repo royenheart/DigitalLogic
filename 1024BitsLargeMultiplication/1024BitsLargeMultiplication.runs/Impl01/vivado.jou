@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Dec  2 23:13:11 2021
+# Process ID: 24540
+# Current directory: D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.runs/Impl01
+# Command line: vivado.exe -log Calculate_Parellel.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Calculate_Parellel.tcl -notrace
+# Log file: D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.runs/Impl01/Calculate_Parellel.vdi
+# Journal file: D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.runs/Impl01\vivado.jou
+#-----------------------------------------------------------
+source Calculate_Parellel.tcl -notrace

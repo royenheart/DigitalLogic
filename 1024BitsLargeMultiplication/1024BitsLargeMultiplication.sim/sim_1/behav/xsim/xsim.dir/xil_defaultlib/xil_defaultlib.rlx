@@ -1,0 +1,8 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.sim/sim_1/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,,,,,,,
+D:/DigitalLogic/Module/1024BitsLargeMultiplication/Algorithm/SerialMul.v,1638409294,verilog,,D:/DigitalLogic/Sim/1024BitsLargeMultiplication/Calculate_TB.v,,SerialMul,,,,,,,,
+D:/DigitalLogic/Module/1024BitsLargeMultiplication/Calculate.v,1638409062,verilog,,D:/DigitalLogic/Module/1024BitsLargeMultiplication/Algorithm/SerialMul.v,,Calculate,,,,,,,,
+D:/DigitalLogic/Sim/1024BitsLargeMultiplication/Calculate_TB.v,1638777458,verilog,,,,Calculate_TB,,,,,,,,

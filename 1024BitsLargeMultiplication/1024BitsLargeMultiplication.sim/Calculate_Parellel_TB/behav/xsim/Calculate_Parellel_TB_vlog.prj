@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../1024BitsLargeMultiplication.srcs/Calculate_Parellel_TB/imports/DigitalLogic/Sim/1024BitsLargeMultiplication/Calculate_Parellel_TB.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

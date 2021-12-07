@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"Calculate_Parellel_TB_func_synth.v" \
+"../../../../../../Module/1024BitsLargeMultiplication/Calculate_Parellel.v" \
+"../../../../../../Module/1024BitsLargeMultiplication/Algorithm/ParallelMul.v" \
+"../../../../../../Module/1024BitsLargeMultiplication/Algorithm/SerialMul256.v" \
+"../../../../../../Sim/1024BitsLargeMultiplication/Calculate_Parellel_TB.v" \
+
+# Do not sort compile order
+nosort

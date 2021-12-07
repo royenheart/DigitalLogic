@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"Calculate_Parellel_TB_time_impl.v" \
+"../../../../../1024BitsLargeMultiplication.srcs/Calculate_Parellel_TB/imports/DigitalLogic/Sim/1024BitsLargeMultiplication/Calculate_Parellel_TB.v" \
+
+# Do not sort compile order
+nosort
