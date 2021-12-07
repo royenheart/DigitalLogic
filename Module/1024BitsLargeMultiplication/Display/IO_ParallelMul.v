@@ -41,7 +41,13 @@ output ct_rstn
     reg   [1023:0] In2;
     wire  [2047:0] Out;
 
-    Calculate_Parallel cal_parallel (
+    initial
+    begin
+        In1 <= 1024'd0;
+        In2 <= 1024'd0;
+    end
+
+    ParallelMul cal_parallel (
         .In1    (In1),
         .In2    (In2),
         .clk    (clk),
@@ -49,8 +55,6 @@ output ct_rstn
 
         .Out    (Out)
     );
-
-    assign led_cout = Out;
 
     //-----{调用Calculate模块}end
 
@@ -66,7 +70,7 @@ output ct_rstn
 
     lcd_module lcd_module(
         .clk (clk ), //10Mhz
-        .resetn (resetn ),
+        .resetn (resetn),
 
         //调用触摸屏的接口
         .display_valid (display_valid ),
@@ -95,18 +99,22 @@ output ct_rstn
     //根据实际需要输入的数修改此小节，
     //建议对每一个数的输入，编写单独一个 always 块
     //若一个数在多个模块内都出现了赋值
-    //可能导致多重驱动问题
+    //可能导致多重驱动问题，Vivado会忽略其中其余的赋值语句导致仿真错误
 
-    reg [4:0] status = 5'd0;
+    reg [4:0] status ;
+
+    initial begin
+        status = 5'd0;
+    end
 
     //-----{status改变}begin
-    always @(posedge clk or negedge resetn) 
+    always @(posedge clk) 
     begin
         if (!resetn)
         begin
             status <= 5'd0;
-        end 
-        else if (input_valid)
+        end
+        else if (input_valid && (switch == 0))
         begin
             status <= (status==31)?0:status+1;
         end
@@ -114,18 +122,18 @@ output ct_rstn
 
     //-----{In1输入}begin
 
-    always @(posedge clk or negedge resetn)
+    always @(posedge clk)
     begin
         if (!resetn)
         begin
             In1 <= 1024'd0;
         end
-        else if (input_valid && (input_which == 0))
+        else if (input_valid && (input_which == 0) && (switch == 0))
         begin
             case (status)
                 0: In1[31:0] <= input_value;
-                1: In1[63:32] <= input_value; 
-                2: In1[95:64] <= input_value; 
+                1: In1[63:32] <= input_value;
+                2: In1[95:64] <= input_value;
                 3: In1[127:96] <= input_value;
                 4: In1[159:128] <= input_value;
                 5: In1[191:160] <= input_value;
@@ -164,13 +172,13 @@ output ct_rstn
 
     //-----{In2输入}begin
 
-    always @(posedge clk or negedge resetn)
+    always @(posedge clk)
     begin
         if (!resetn)
         begin
             In2 <= 1024'd0;
         end
-        else if (input_valid && (input_which == 1))
+        else if (input_valid && (input_which == 1) && (switch == 0))
         begin
             case(status)
                 0: In2[31:0] <= input_value;   
@@ -218,32 +226,11 @@ output ct_rstn
     //根据需要显示的数修改此小节，
     //触摸屏上共有 44 块显示区域，可显示 44 组 32 位数据
 
-    reg [2047:0] display    = 2048'd0;
+    reg [2047:0] display;
 
     parameter state1 = "IN1";
     parameter state2 = "IN2";
     parameter state3 = "OUT";
-
-    //根据input_which选择输出
-    always @(posedge clk or negedge resetn) 
-    begin
-        if (!resetn)
-        begin
-            display <= 2048'd0;
-        end
-        else if (switch == 0)
-        begin
-            case (input_which)
-                0: display <= In1;
-                1: display <= In2;
-                default: display <= 2048'd0;
-            endcase
-        end
-        else
-        begin
-            display <= Out;
-        end
-    end
 
     //44 块显示区域从 1 开始编号，编号为 1~44，
     always @(posedge clk)
@@ -477,7 +464,7 @@ output ct_rstn
         endcase
     end
 
-    always @(posedge clk) 
+    always @(posedge clk)
     begin
         if (switch == 1)
         begin
@@ -490,6 +477,27 @@ output ct_rstn
         else
         begin
             display_name <= state2;
+        end
+    end
+
+    initial 
+    begin
+        display = In1;    
+    end
+
+    always @(switch or input_which) 
+    begin
+        if (switch == 1)
+        begin
+            display <= Out[1024:1];
+        end
+        else if (input_which == 0)
+        begin
+            display <= In1;
+        end
+        else
+        begin
+            display <= In2;
         end
     end
 

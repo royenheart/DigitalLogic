@@ -115,6 +115,7 @@ proc step_failed { step } {
 OPTRACE "Impl_Parallel" END { }
 }
 
+set_msg_config -id {Common 17-41} -limit 10000000
 
 OPTRACE "Impl_Parallel" START { ROLLUP_1 }
 OPTRACE "Phase: Write Bitstream" START { ROLLUP_AUTO }

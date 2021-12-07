@@ -1,6 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigitalLogic/Module/1024BitsLargeMultiplication/Calculate.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Calculate
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigitalLogic/Module/1024BitsLargeMultiplication/Algorithm/SerialMul.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module SerialMul
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigitalLogic/Sim/1024BitsLargeMultiplication/Calculate_TB.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Calculate_TB

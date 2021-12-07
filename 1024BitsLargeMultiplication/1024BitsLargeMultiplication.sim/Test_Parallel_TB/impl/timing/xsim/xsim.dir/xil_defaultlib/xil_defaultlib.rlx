@@ -2,5 +2,5 @@
 2020.2
 Jun 10 2021
 20:04:57
-D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.sim/Test_Parallel_TB/impl/timing/xsim/Test_Parallel_TB_time_impl.v,1638841691,verilog,,D:/DigitalLogic/Sim/1024BitsLargeMultiplication/Test_Parallel_TB.v,,Test_Parallel;glbl,,,,,,,,
-D:/DigitalLogic/Sim/1024BitsLargeMultiplication/Test_Parallel_TB.v,1638841630,verilog,,,,Test_Parallel_TB,,,,,,,,
+D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.sim/Test_Parallel_TB/impl/timing/xsim/Test_Parallel_TB_time_impl.v,1638901238,verilog,,D:/DigitalLogic/Sim/1024BitsLargeMultiplication/Test_Parallel_TB.v,,ParallelMul;SerialMul256;Test_Parallel;glbl,,,,,,,,
+D:/DigitalLogic/Sim/1024BitsLargeMultiplication/Test_Parallel_TB.v,1638897995,verilog,,,,Test_Parallel_TB,,,,,,,,

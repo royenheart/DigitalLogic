@@ -27,9 +27,11 @@ module SerialMul (
     output wire[2047:0]  Out
 );
     
-    // 作为每次移位判断的计数器
+    // Test_Parallel Parameters
+    parameter PERIOD  = 10;
 
-    reg [10:0] count;
+    // 作为每次移位判断的计数器
+    reg [10:0] count = 0;
 
     // In1作为被乘数B，In2作为乘数A
 
@@ -43,11 +45,13 @@ module SerialMul (
     always @(In1 or In2) 
     begin
         A_r = In2;    
-        is_change = 1;
+        is_change = 1'b1;
+        #(PERIOD*2) is_change <= 1'b0;
     end
 
     // 组合逻辑部分输出
     assign AddTmp = (A[0] == 1)?D+In1:D;
+    assign Out = {D,A};
 
     // 时序逻辑改变D
     always @(posedge clk or negedge rstn) 
@@ -65,26 +69,23 @@ module SerialMul (
             D <= 2048'd0;
             A <= A_r;
         end
-        else if (count != 1024)
+        else if (count <= 1024)
         begin
             count <= count + 1;
             D <= (AddTmp >> 1);
             A <= {AddTmp[0],A[1023:1]};
         end
-        else
+        else if (count > 1024)
         begin
-            if (is_change == 1)
-            begin
-                is_change <= 0;
-                count <= 11'd0;
-            end
-            else
-            begin
-                count <= 11'd1024;
-            end
+            case (is_change)
+                0: count <= 11'd1025;
+                1: 
+                begin
+                    count <= 11'd0;   
+                end
+                default: count <= 11'd0;
+            endcase
         end
     end
-
-    assign Out = {AddTmp >> 1, AddTmp[0], A[1023:1]};
 
 endmodule

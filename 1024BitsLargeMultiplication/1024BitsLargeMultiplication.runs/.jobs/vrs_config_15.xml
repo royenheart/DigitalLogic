@@ -1,6 +1,9 @@
 <?xml version="1.0"?>
 <Runs Version="1" Minor="0">
-	<Run Id="Impl01" LaunchDir="D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.runs/Impl01" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design"/>
+	<Run Id="Synth_Test_Parallel" LaunchDir="D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.runs/Synth_Test_Parallel" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="lmpl_Test_Parallel" LaunchDir="D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.runs/lmpl_Test_Parallel" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="Synth_Test_Parallel"/>
+	</Run>
 	<Parameters>
 		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
 		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>

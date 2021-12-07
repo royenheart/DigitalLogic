@@ -1,4 +1,0 @@
-
-*** Running vivado
-    with args -log Test_Parallel.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source Test_Parallel.tcl -notrace
-

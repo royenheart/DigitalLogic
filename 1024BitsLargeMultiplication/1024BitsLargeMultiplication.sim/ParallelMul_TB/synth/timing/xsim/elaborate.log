@@ -1,0 +1,12 @@
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto b236e4da5de34f33bdad7ca796cfbbee --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot ParallelMul_TB_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.ParallelMul_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-3180] cannot find port 'Out' on this module [D:/DigitalLogic/Sim/1024BitsLargeMultiplication/ParallelMul_TB.v:59]
+ERROR: [VRFC 10-3180] cannot find port 'rstn' on this module [D:/DigitalLogic/Sim/1024BitsLargeMultiplication/ParallelMul_TB.v:57]
+ERROR: [VRFC 10-3180] cannot find port 'clk' on this module [D:/DigitalLogic/Sim/1024BitsLargeMultiplication/ParallelMul_TB.v:56]
+ERROR: [VRFC 10-3180] cannot find port 'In2' on this module [D:/DigitalLogic/Sim/1024BitsLargeMultiplication/ParallelMul_TB.v:55]
+ERROR: [VRFC 10-3180] cannot find port 'In1' on this module [D:/DigitalLogic/Sim/1024BitsLargeMultiplication/ParallelMul_TB.v:54]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.

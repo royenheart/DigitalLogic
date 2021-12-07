@@ -1,5 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.sim/Test_Parallel_TB/impl/timing/xsim/Test_Parallel_TB_time_impl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Test_Parallel
-INFO: [VRFC 10-311] analyzing module glbl
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigitalLogic/Sim/1024BitsLargeMultiplication/Test_Parallel_TB.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Test_Parallel_TB

@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
-| Date                      : Tue Dec  7 10:03:04 2021
+| Date                      : Wed Dec  8 04:15:31 2021
 | Host                      : LAPTOP-TDKNUURL running 64-bit major release  (build 9200)
 | Command                   : report_io -file IO_ParallelMul_io_placed.rpt
 | Design                    : IO_ParallelMul
@@ -37,7 +37,7 @@ Table of Contents
 +------------+-----------------+------------+------------------------------+---------------+-------------+---------+------------+------+---------------------+----------------------+---------+------------+-----------+----------+------+------------------+--------------+-------------------+--------------+
 | A1         |                 | High Range | VCCO_35                      | VCCO          |             |      35 |            |      |                     |                      |    3.30 |            |           |          |      |                  |              |                   |              |
 | A2         |                 | High Range | IO_L20N_T3_35                | User IO       |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| A3         | led_cout        | High Range | IO_L20P_T3_35                | OUTPUT        | LVCMOS33    |      35 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| A3         | led_cout        | High Range | IO_L20P_T3_35                | TRISTATE      | LVCMOS33    |      35 |         12 | SLOW |                     |            FP_VTT_50 |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | A4         |                 | High Range | IO_L16N_T2_35                | User IO       |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | A5         |                 | High Range | IO_L15N_T2_DQS_35            | User IO       |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | A6         |                 |            | GND                          | GND           |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |

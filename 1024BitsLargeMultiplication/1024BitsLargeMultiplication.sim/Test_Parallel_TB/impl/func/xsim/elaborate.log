@@ -1,0 +1,16 @@
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto b236e4da5de34f33bdad7ca796cfbbee --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L secureip --snapshot Test_Parallel_TB_func_impl xil_defaultlib.Test_Parallel_TB xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'resetn' [D:/DigitalLogic/Sim/1024BitsLargeMultiplication/Test_Parallel_TB.v:24]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module unisims_ver.OBUF
+Compiling module xil_defaultlib.Test_Parallel
+Compiling module xil_defaultlib.Test_Parallel_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot Test_Parallel_TB_func_impl

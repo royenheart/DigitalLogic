@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../Module/1024BitsLargeMultiplication/Algorithm/Count256.v" \
+"../../../../1024BitsLargeMultiplication.srcs/sources_1/imports/1024BitsLargeMultiplication/Algorithm/ParallelMul.v" \
+"../../../../../Module/1024BitsLargeMultiplication/Algorithm/SerialMul256.v" \
+"../../../../../Module/1024BitsLargeMultiplication/MulTest.v/Test_Parallel.v" \
+"../../../../../Sim/1024BitsLargeMultiplication/Test_Parallel_TB.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

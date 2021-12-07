@@ -1,0 +1,11 @@
+0.7
+2020.2
+Jun 10 2021
+20:04:57
+D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.sim/Test_Parallel_TB/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,,,,,,,
+D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/sources_1/imports/1024BitsLargeMultiplication/Algorithm/ParallelMul.v,1638451836,verilog,,D:/DigitalLogic/Module/1024BitsLargeMultiplication/Algorithm/SerialMul256.v,,ParallelMul,,,,,,,,
+D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/sources_1/imports/1024BitsLargeMultiplication/Calculate_Parallel.v,1638501685,verilog,,D:/DigitalLogic/Module/1024BitsLargeMultiplication/Algorithm/Count256.v,,Calculate_Parallel,,,,,,,,
+D:/DigitalLogic/Module/1024BitsLargeMultiplication/Algorithm/Count256.v,1638879615,verilog,,D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/sources_1/imports/1024BitsLargeMultiplication/Algorithm/ParallelMul.v,,Count256,,,,,,,,
+D:/DigitalLogic/Module/1024BitsLargeMultiplication/Algorithm/SerialMul256.v,1638877394,verilog,,D:/DigitalLogic/Module/1024BitsLargeMultiplication/MulTest.v/Test_Parallel.v,,SerialMul256,,,,,,,,
+D:/DigitalLogic/Module/1024BitsLargeMultiplication/MulTest.v/Test_Parallel.v,1638858597,verilog,,D:/DigitalLogic/Sim/1024BitsLargeMultiplication/Test_Parallel_TB.v,,Test_Parallel,,,,,,,,
+D:/DigitalLogic/Sim/1024BitsLargeMultiplication/Test_Parallel_TB.v,1638844567,verilog,,,,Test_Parallel_TB,,,,,,,,

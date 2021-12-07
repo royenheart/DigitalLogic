@@ -1,5 +1,23 @@
-//~ `New testbench
-`timescale  1ns / 1ps   
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date: 
+// Design Name: 
+// Module Name: 
+// Project Name: 
+// Target Devices: 
+// Tool Versions: 
+// Description: 
+// 
+// Dependencies: 
+// 
+// Revision:
+// Revision 0.01 - File Created
+// Additional Comments:
+// 
+//////////////////////////////////////////////////////////////////////////////////  
 
 module Test_Parallel_TB;
 
@@ -10,18 +28,19 @@ parameter PERIOD  = 10;
 reg   t1                                   = 0 ;
 
 // Test_Parallel Outputs
-wire  t2                                   ;
-reg   clk = 1;
+wire  [255:0] t2                               ;
+reg   clk                                  = 0 ;
+reg   rstn                                 = 1 ;
 
 initial
 begin
     forever #(PERIOD/2)  clk=~clk;
 end
 
-Test_Parallel (
+Test_Parallel tp (
     .t1                      (t1),
     .clk                     (clk),
-    .resetn                  (1),
+    .resetn                  (rstn),
     .t2                      (t2)
 );
 

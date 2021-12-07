@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../Module/1024BitsLargeMultiplication/Algorithm/SerialMul256.v" \
+"../../../../../Sim/1024BitsLargeMultiplication/SerialMul256_TB.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

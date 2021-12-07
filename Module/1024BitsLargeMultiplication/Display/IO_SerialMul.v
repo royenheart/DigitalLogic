@@ -41,7 +41,7 @@ output ct_rstn
     reg  [1023:0] In2;
     wire [2047:0] Out;
 
-    Calculate cal_serial (
+    SerialMul cal_serial (
         .In1    (In1),
         .In2    (In2),
         .clk    (clk),

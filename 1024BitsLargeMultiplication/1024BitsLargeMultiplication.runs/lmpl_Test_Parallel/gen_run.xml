@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="lmpl_Test_Parallel" LaunchPart="xc7a200tfbg676-2" LaunchTime="1638901024">
+  <File Type="ROUTE-PWR" Name="Test_Parallel_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="Test_Parallel.tcl"/>
+  <File Type="BITSTR-MMI" Name="Test_Parallel.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="Test_Parallel_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="Test_Parallel_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="Test_Parallel_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="Test_Parallel_reports.tcl"/>
+  <File Type="OPT-TIMING" Name="Test_Parallel_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="Test_Parallel_opt.dcp"/>
+  <File Type="OPT-DRC" Name="Test_Parallel_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Test_Parallel.hwdef"/>
+  <File Type="PWROPT-DCP" Name="Test_Parallel_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="Test_Parallel_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="Test_Parallel_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="Test_Parallel_placed.dcp"/>
+  <File Type="PLACE-IO" Name="Test_Parallel_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="Test_Parallel_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="Test_Parallel_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="Test_Parallel_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="Test_Parallel_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="Test_Parallel_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Test_Parallel_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="Test_Parallel.bin"/>
+  <File Type="PLACE-TIMING" Name="Test_Parallel_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Test_Parallel_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="Test_Parallel.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="Test_Parallel_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="Test_Parallel_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="Test_Parallel_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="Test_Parallel.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="Test_Parallel_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Test_Parallel_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="Test_Parallel_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Test_Parallel_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="Test_Parallel_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="Test_Parallel_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="Test_Parallel_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="Test_Parallel_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="Test_Parallel_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="Test_Parallel_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="Test_Parallel_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="Test_Parallel_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="Test_Parallel_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="Test_Parallel_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="Test_Parallel_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="Test_Parallel_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="Test_Parallel_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="Test_Parallel_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="Test_Parallel_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="Test_Parallel_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="Test_Parallel_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Test_Parallel_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Test_Parallel_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="Test_Parallel_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="Test_Parallel_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="Test_Parallel_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="Test_Parallel_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="Test_Parallel.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="Test_Parallel_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="Test_Parallel_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="Test_Parallel.nky"/>
+  <File Type="BITSTR-BMM" Name="Test_Parallel_bd.bmm"/>
+  <File Type="PDI-FILE" Name="Test_Parallel.pdi"/>
+  <File Type="RCFI_FILE" Name="Test_Parallel.rcfi"/>
+  <File Type="CFI_FILE" Name="Test_Parallel.cfi"/>
+  <File Type="RNPI_FILE" Name="Test_Parallel.rnpi"/>
+  <File Type="NPI_FILE" Name="Test_Parallel.npi"/>
+  <File Type="RBD_FILE" Name="Test_Parallel.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Test_Parallel.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="Test_Parallel.sysdef"/>
+  <File Type="BG-BGN" Name="Test_Parallel.bgn"/>
+  <File Type="BG-DRC" Name="Test_Parallel.drc"/>
+  <File Type="RDI-RDI" Name="Test_Parallel.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../Module/1024BitsLargeMultiplication/Algorithm/ParallelMul.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Module/1024BitsLargeMultiplication/Algorithm/SerialMul256.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Module/1024BitsLargeMultiplication/MulTest.v/Test_Parallel.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/1024BitsLargeMultiplication/Display/lcd_module.dcp">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Module/1024BitsLargeMultiplication/Display/lcd_module.dcp"/>
+        <Attr Name="ImportTime" Val="1637932610"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../Module/1024BitsLargeMultiplication/Display/IO_ParallelMul.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/1024BitsLargeMultiplication/Calculate.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Module/1024BitsLargeMultiplication/Calculate.v"/>
+        <Attr Name="ImportTime" Val="1638409062"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/1024BitsLargeMultiplication/Algorithm/SerialMul.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Module/1024BitsLargeMultiplication/Algorithm/SerialMul.v"/>
+        <Attr Name="ImportTime" Val="1638838675"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/1024BitsLargeMultiplication/Display/IO_SerialMul.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Module/1024BitsLargeMultiplication/Display/IO_SerialMul.v"/>
+        <Attr Name="ImportTime" Val="1638810263"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Test_Parallel"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/Constrs01">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Constraints/1024BitsLargeMultiplication/IO_Display.xdc"/>
+        <Attr Name="ImportTime" Val="1638801805"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

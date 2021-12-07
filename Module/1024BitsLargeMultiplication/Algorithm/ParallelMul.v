@@ -29,6 +29,8 @@ module ParallelMul (
 
     wire [1279:0] OutTmp[3:0];
 
+    assign Out = {OutTmp[3],{768{1'b0}}} + {OutTmp[2],{512{1'b0}}} + {OutTmp[1],{256{1'b0}}} + OutTmp[0];
+
     SerialMul256 se_mul_1 (
         .In1    (In1),
         .In2    (In2[255:0]),
@@ -64,7 +66,5 @@ module ParallelMul (
 
         .Out    (OutTmp[3])
     );
-
-    assign Out = {OutTmp[3],{768{1'b0}}} + {OutTmp[2],{512{1'b0}}} + {OutTmp[1],{256{1'b0}}} + OutTmp[0];
 
 endmodule

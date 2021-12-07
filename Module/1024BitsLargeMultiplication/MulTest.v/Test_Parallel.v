@@ -23,16 +23,22 @@ module Test_Parallel (
     input wire t1,
     input wire clk,
     input wire resetn,
-    output wire t2
+    output wire [255:0] t2
 );
     
-    reg [1023:0] In1 = 1024'd33;
-    reg [1023:0] In2 = 1024'd44;
+    reg [1023:0] In1;
+    reg [1023:0] In2;
     wire [2047:0] Out;
 
-    assign t2 = t1;
+    initial 
+    begin
+        In1 = 1024'd33;
+        In2 = 1024'd44;
+    end
 
-    Calculate_Parallel test_pa (
+    assign t2 = Out[255:0];
+
+    ParallelMul test_pa (
         .In1    (In1),
         .In2    (In2),
         .rstn   (resetn),
