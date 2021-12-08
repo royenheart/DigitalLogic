@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Wed Dec  8 21:27:58 2021
+# Process ID: 25232
+# Current directory: D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.runs/Synth_ParallelMul
+# Command line: vivado.exe -log ParallelMul.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ParallelMul.tcl
+# Log file: D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.runs/Synth_ParallelMul/ParallelMul.vds
+# Journal file: D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.runs/Synth_ParallelMul\vivado.jou
+#-----------------------------------------------------------
+source ParallelMul.tcl -notrace

@@ -2,11 +2,11 @@
 # Vivado v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Wed Dec  8 02:18:06 2021
-# Process ID: 3512
+# Start of session at: Wed Dec  8 22:06:43 2021
+# Process ID: 9092
 # Current directory: D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.runs/lmpl_Test_Parallel
-# Command line: vivado.exe -log Test_Parallel.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Test_Parallel.tcl -notrace
-# Log file: D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.runs/lmpl_Test_Parallel/Test_Parallel.vdi
+# Command line: vivado.exe -log Test_Serial.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Test_Serial.tcl -notrace
+# Log file: D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.runs/lmpl_Test_Parallel/Test_Serial.vdi
 # Journal file: D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.runs/lmpl_Test_Parallel\vivado.jou
 #-----------------------------------------------------------
-source Test_Parallel.tcl -notrace
+source Test_Serial.tcl -notrace

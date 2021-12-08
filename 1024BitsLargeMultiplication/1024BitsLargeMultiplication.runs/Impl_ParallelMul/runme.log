@@ -1,0 +1,478 @@
+
+*** Running vivado
+    with args -log ParallelMul.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source ParallelMul.tcl -notrace
+
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source ParallelMul.tcl -notrace
+Command: link_design -top ParallelMul -part xc7a200tfbg676-2
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.306 . Memory (MB): peak = 1135.594 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2791 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc]
+WARNING: [Vivado 12-584] No ports matched 'led_cout'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:2]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:2]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'resetn'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:3]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:3]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'input_which'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:4]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:4]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:5]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:5]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'input_which'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:6]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:6]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led_cout'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'resetn'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:9]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:9]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'switch'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:10]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:10]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_rst'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:11]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:11]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_cs'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:12]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:12]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_rs'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:13]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:13]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_wr'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:14]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:14]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_rd'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:15]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:15]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_bl_ctr'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:16]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:16]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ct_int'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ct_sda'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ct_scl'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ct_rstn'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_rst'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_cs'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_rs'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_wr'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_rd'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:25]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:25]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_bl_ctr'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[0]'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[1]'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:28]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:28]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[2]'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[3]'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[4]'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:31]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:31]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[5]'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[6]'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[7]'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:34]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:34]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[8]'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[9]'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[10]'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[11]'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[12]'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[13]'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[14]'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[15]'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ct_int'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ct_sda'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ct_scl'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'ct_rstn'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[15]'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[14]'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[13]'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[12]'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[11]'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[10]'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:53]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:53]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[9]'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:54]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:54]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[8]'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:55]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:55]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[7]'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[6]'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[5]'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[4]'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[3]'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:60]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:60]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[2]'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:61]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:61]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[1]'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:62]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:62]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'lcd_data_io[0]'. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:63]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc:63]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.srcs/Constrs01/imports/1024BitsLargeMultiplication/IO_Display.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1135.594 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+7 Infos, 60 Warnings, 60 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1135.594 ; gain = 0.000
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.972 . Memory (MB): peak = 1135.594 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 134a5e9aa
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 1542.215 ; gain = 406.621
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 134a5e9aa
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1760.566 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 0 cells and removed 0 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: d8a425b9
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1760.566 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 0 cells and removed 0 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 134018a01
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1760.566 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 0 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 134018a01
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1760.566 ; gain = 0.000
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 134018a01
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1760.566 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 134018a01
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1760.566 ; gain = 0.000
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               0  |               0  |                                              0  |
+|  Constant propagation         |               0  |               0  |                                              0  |
+|  Sweep                        |               0  |               0  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.077 . Memory (MB): peak = 1760.566 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: e4dac12f
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1760.566 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: e4dac12f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1760.566 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: e4dac12f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1760.566 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1760.566 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: e4dac12f
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1760.566 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+24 Infos, 60 Warnings, 60 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 1760.566 ; gain = 624.973
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1760.566 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.runs/Impl_ParallelMul/ParallelMul_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file ParallelMul_drc_opted.rpt -pb ParallelMul_drc_opted.pb -rpx ParallelMul_drc_opted.rpx
+Command: report_drc -file ParallelMul_drc_opted.rpt -pb ParallelMul_drc_opted.pb -rpx ParallelMul_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.runs/Impl_ParallelMul/ParallelMul_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 1826.449 ; gain = 65.883
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1827.469 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: dedc0117
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1827.469 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1827.469 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+ERROR: [Place 30-415] IO Placement failed due to overutilization. This design contains 4097 I/O ports
+ while the target  device: 7a200t package: fbg676, contains only 399 available user I/O. The target device has 400 usable I/O pins of which 1 are already occupied by user-locked I/Os.
+ To rectify this issue:
+ 1. Ensure you are targeting the correct device and package.  Select a larger device or different package if necessary.
+ 2. Check the top-level ports of the design to ensure the correct number of ports are specified.
+ 3. Consider design changes to reduce the number of I/Os necessary.
+ERROR: [Place 30-68] Instance In1_IBUF[0]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[1000]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[1001]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[1002]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[1003]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[1004]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[1005]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[1006]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[1007]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[1008]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[1009]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[100]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[1010]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[1011]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[1012]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[1013]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[1014]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[1015]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[1016]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[1017]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[1018]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[1019]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[101]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[1020]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[1021]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[1022]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[1023]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[102]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[103]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[104]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[105]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[106]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[107]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[108]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[109]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[10]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[110]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[111]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[112]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[113]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[114]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[115]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[116]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[117]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[118]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[119]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[11]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[120]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[121]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[122]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[123]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[124]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[125]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[126]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[127]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[128]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[129]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[12]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[130]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[131]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[132]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[133]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[134]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[135]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[136]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[137]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[138]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[139]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[13]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[140]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[141]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[142]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[143]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[144]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[145]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[146]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[147]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[148]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[149]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[14]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[150]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[151]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[152]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[153]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[154]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[155]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[156]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[157]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[158]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[159]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[15]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[160]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[161]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[162]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[163]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[164]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[165]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[166]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[167]_inst (IBUF) is not placed
+ERROR: [Place 30-68] Instance In1_IBUF[168]_inst (IBUF) is not placed
+INFO: [Common 17-14] Message 'Place 30-68' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: c9a5b1c5
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1827.469 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: c9a5b1c5
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1827.469 ; gain = 0.000
+ERROR: [Place 30-99] Placer failed with error: 'IO Clock Placer failed'
+Please review all ERROR, CRITICAL WARNING, and WARNING messages during placement to understand the cause for failure.
+Ending Placer Task | Checksum: c9a5b1c5
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 1827.469 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+43 Infos, 60 Warnings, 60 Critical Warnings and 103 Errors encountered.
+place_design failed
+ERROR: [Common 17-69] Command failed: Placer could not place all instances
+INFO: [Common 17-206] Exiting Vivado at Wed Dec  8 21:30:21 2021...
