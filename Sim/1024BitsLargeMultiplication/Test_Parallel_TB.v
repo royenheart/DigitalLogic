@@ -1,16 +1,16 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
+// Engineer: 谢皓泽、袁文斌、李文凯
 // 
 // Create Date: 
 // Design Name: 
-// Module Name: 
+// Module Name: Test_Parallel
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
 // Description: 
-// 
+// 综合仿真用的并行乘法器实验模块
 // Dependencies: 
 // 
 // Revision:

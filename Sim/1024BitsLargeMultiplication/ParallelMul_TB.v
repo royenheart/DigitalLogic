@@ -1,16 +1,16 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
+// Engineer: 谢皓泽、袁文斌
 // 
 // Create Date: 
 // Design Name: 
-// Module Name: 
+// Module Name: ParallelMul_TB
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
 // Description: 
-// 
+// 1024-1024并行乘法Testbench
 // Dependencies: 
 // 
 // Revision:
@@ -51,12 +51,12 @@ begin
 end
 
 ParallelMul  u_ParallelMul (
-    .In1                     ( In1  ),
-    .In2                     ( In2  ),
-    .clk                     ( clk  ),
-    .rstn                    ( rstn ),
+    .In1                     (In1),
+    .In2                     (In2),
+    .clk                     (clk),
+    .rstn                    (rst),
 
-    .Out                     ( Out  )
+    .Out                     (Out)
 );
 
 endmodule

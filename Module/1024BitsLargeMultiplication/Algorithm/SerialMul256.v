@@ -1,17 +1,16 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
+// Engineer: 谢皓泽、李文凯
 // 
 // Create Date: 
 // Design Name: 
-// Module Name: SerialMul
+// Module Name: SerialMul256
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
 // Description: 
-// 串行乘法-"移位-加"迭代算法-被乘数256位数据运算
-// 4个256位串行乘法器并行执行执行1024位-1024位乘法运算
+// 串行乘法-"移位-加"迭代算法-256位乘数与1024位被乘数
 // Dependencies: 
 // 
 // Revision:
@@ -28,10 +27,7 @@ module SerialMul256 (
     output wire [1279:0]   Out
 );
 
-    // Test_Parallel Parameters
-    parameter PERIOD  = 10;
-
-    // 作为每次移位判断的计数器
+    // 作为每次移位判断的计数器（总共记256位）
     reg [8:0] count;
 
     // In1作为被乘数B，In2作为乘数A
@@ -50,11 +46,13 @@ module SerialMul256 (
         count <= 9'd0;
     end
 
+    // 每当输入改变，重新存放数据于寄存器
     always @(In1 or In2) 
     begin
         A_r = In2;
     end
 
+    // 时序逻辑实现移位-加
     always @(posedge clk or negedge rstn) 
     begin
         if (!rstn)

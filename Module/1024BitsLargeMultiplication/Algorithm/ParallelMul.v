@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
+// Engineer: 谢皓泽、李文凯
 // 
 // Create Date: 
 // Design Name: 
@@ -19,6 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
+// 并行乘法器
 module ParallelMul (
     input  wire [1023:0] In1,
     input  wire [1023:0] In2,
@@ -27,8 +28,10 @@ module ParallelMul (
     output wire [2047:0] Out
 );
 
+    // 记录各个串行模块的输出
     wire [1279:0] OutTmp[3:0];
 
+    // 最终的输出
     assign Out = {OutTmp[3],{768{1'b0}}} + {OutTmp[2],{512{1'b0}}} + {OutTmp[1],{256{1'b0}}} + OutTmp[0];
 
     SerialMul256 se_mul_1 (

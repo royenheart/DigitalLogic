@@ -1,21 +1,21 @@
 `timescale 1ns / 1ps
 //**************************************************************************************
 // > 文件名：IO_ParallelMul.v
-// > 描述：1024位大数乘法输入输出模块
+// > 描述：1024位二进制大数乘法输入输出模块-并行乘法器
 // > 实现原理：从触摸屏读入数据，通过运算模块运算，得到结果再输出至触摸屏
 // > 输入输出限制：16进制输入输出，因为显示屏硬件限制我们没法输出整个1024位大数，输入小数据即可
-// > 作者：LOONGSON, 谢皓泽
+// > 作者：LOONGSON, 谢皓泽，袁文斌，李文凯
 //**************************************************************************************
 
 module IO_ParallelMul (
-//时钟与复位信号
+//时钟信号
 input clk,
-// 后缀"n"代表低电平有效（高电平置位）
+//后缀"n"代表低电平有效（高电平置位）
 input resetn,
-// 输入/输出模式切换，当为0时为输入模式，1时为输出模式 
+//输入/输出模式切换，当为0时为输入模式，1时为输出模式 
 input switch,
 
-// 选择输入并输出至屏幕的是哪一个数（两个1024位二进制大数进行乘法），0为In1，反之In2
+//选择输入并输出至屏幕的是哪一个数（两个1024位二进制大数进行乘法），0为In1，反之In2
 input input_which, 
 
 //led 灯，用于显示 cout
@@ -36,7 +36,7 @@ output ct_scl,
 output ct_rstn
 );
 
-    //-----{调用Calculate模块}begin
+    //-----{调用ParallelMul模块}begin
     reg   [1023:0] In1;
     reg   [1023:0] In2;
     wire  [2047:0] Out;
@@ -56,7 +56,7 @@ output ct_rstn
         .Out    (Out)
     );
 
-    //-----{调用Calculate模块}end
+    //-----{调用ParallelMul模块}end
 
     //---------------------{调用触摸屏模块}begin--------------------//
     //-----{实例化触摸屏}begin
@@ -119,9 +119,9 @@ output ct_rstn
             status <= (status==31)?0:status+1;
         end
     end
+    //-----{status改变}end
 
     //-----{In1输入}begin
-
     always @(posedge clk)
     begin
         if (!resetn)
@@ -167,11 +167,9 @@ output ct_rstn
             endcase
         end
     end
-
     //-----{In1输入}end
 
     //-----{In2输入}begin
-
     always @(posedge clk)
     begin
         if (!resetn)
@@ -217,7 +215,6 @@ output ct_rstn
             endcase
         end
     end
-
     //-----{In2输入}end
 
     //-----{从触摸屏获取输入}end
@@ -225,6 +222,7 @@ output ct_rstn
     //-----{输出到触摸屏显示}begin
     //根据需要显示的数修改此小节，
     //触摸屏上共有 44 块显示区域，可显示 44 组 32 位数据
+    //由于此限制，我们的2048位输出不能输出完全，因此只显示前1024位
 
     reg [2047:0] display;
 
@@ -464,6 +462,7 @@ output ct_rstn
         endcase
     end
 
+    //修改文字提示
     always @(posedge clk)
     begin
         if (switch == 1)
@@ -485,6 +484,7 @@ output ct_rstn
         display = In1;    
     end
 
+    //改变触摸屏的输入信号
     always @(switch or input_which) 
     begin
         if (switch == 1)

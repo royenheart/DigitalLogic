@@ -1,21 +1,21 @@
 `timescale 1ns / 1ps
 //**************************************************************************************
 // > 文件名：IO_SerialMul.v
-// > 描述：1024位大数乘法输入输出模块
+// > 描述：1024位二进制大数乘法输入输出模块-串行乘法器
 // > 实现原理：从触摸屏读入数据，通过运算模块运算，得到结果再输出至触摸屏
 // > 输入输出限制：16进制输入输出，因为显示屏硬件限制我们没法输出整个1024位大数，输入小数据即可
-// > 作者：LOONGSON, 谢皓泽
+// > 作者：LOONGSON, 谢皓泽，袁文斌，李文凯
 //**************************************************************************************
 
 module IO_SerialMul (
-//时钟与复位信号
+//时钟信号
 input clk,
-// 后缀"n"代表低电平有效（高电平置位）
+//后缀"n"代表低电平有效（高电平置位）
 input resetn,
-// 输入/输出模式切换，当为0时为输入模式，1时为输出模式 
+//输入/输出模式切换，当为0时为输入模式，1时为输出模式 
 input switch,
 
-// 选择输入并输出至屏幕的是哪一个数（两个1024位二进制大数进行乘法），0为In1，反之In2
+//选择输入并输出至屏幕的是哪一个数（两个1024位二进制大数进行乘法），0为In1，反之In2
 input input_which, 
 
 //led 灯，用于显示 cout
@@ -36,10 +36,16 @@ output ct_scl,
 output ct_rstn
 );
 
-    //-----{调用Calculate模块}begin
-    reg  [1023:0] In1;
-    reg  [1023:0] In2;
-    wire [2047:0] Out;
+    //-----{调用SerialMul模块}begin
+    reg   [1023:0] In1;
+    reg   [1023:0] In2;
+    wire  [2047:0] Out;
+
+    initial
+    begin
+        In1 <= 1024'd0;
+        In2 <= 1024'd0;
+    end
 
     SerialMul cal_serial (
         .In1    (In1),
@@ -50,9 +56,7 @@ output ct_rstn
         .Out    (Out)
     );
 
-    assign led_cout = Out;
-
-    //-----{调用Calculate模块}end
+    //-----{调用SerialMul模块}end
 
     //---------------------{调用触摸屏模块}begin--------------------//
     //-----{实例化触摸屏}begin
@@ -66,7 +70,7 @@ output ct_rstn
 
     lcd_module lcd_module(
         .clk (clk ), //10Mhz
-        .resetn (resetn ),
+        .resetn (resetn),
 
         //调用触摸屏的接口
         .display_valid (display_valid ),
@@ -95,43 +99,41 @@ output ct_rstn
     //根据实际需要输入的数修改此小节，
     //建议对每一个数的输入，编写单独一个 always 块
     //若一个数在多个模块内都出现了赋值
-    //可能导致多重驱动问题
+    //可能导致多重驱动问题，Vivado会忽略其中其余的赋值语句导致仿真错误
 
-    reg [4:0] status = 5'd0;
+    reg [4:0] status ;
 
-    //当input_which即选择改变时修改status
-    always @(input_which)
-    begin
-        status <= 5'd0;
+    initial begin
+        status = 5'd0;
     end
 
     //-----{status改变}begin
-    always @(posedge clk or negedge resetn) 
+    always @(posedge clk) 
     begin
         if (!resetn)
         begin
             status <= 5'd0;
-        end 
-        else if (input_valid)
+        end
+        else if (input_valid && (switch == 0))
         begin
-            status = (status==31)?0:status+1;
+            status <= (status==31)?0:status+1;
         end
     end
+    //-----{status改变}end
 
     //-----{In1输入}begin
-
-    always @(posedge clk or negedge resetn)
+    always @(posedge clk)
     begin
         if (!resetn)
         begin
             In1 <= 1024'd0;
         end
-        else if (input_valid && (input_which == 0))
+        else if (input_valid && (input_which == 0) && (switch == 0))
         begin
             case (status)
                 0: In1[31:0] <= input_value;
-                1: In1[63:32] <= input_value; 
-                2: In1[95:64] <= input_value; 
+                1: In1[63:32] <= input_value;
+                2: In1[95:64] <= input_value;
                 3: In1[127:96] <= input_value;
                 4: In1[159:128] <= input_value;
                 5: In1[191:160] <= input_value;
@@ -165,18 +167,16 @@ output ct_rstn
             endcase
         end
     end
-
     //-----{In1输入}end
 
     //-----{In2输入}begin
-
-    always @(posedge clk or negedge resetn)
+    always @(posedge clk)
     begin
         if (!resetn)
         begin
             In2 <= 1024'd0;
         end
-        else if (input_valid && (input_which == 1))
+        else if (input_valid && (input_which == 1) && (switch == 0))
         begin
             case(status)
                 0: In2[31:0] <= input_value;   
@@ -215,7 +215,6 @@ output ct_rstn
             endcase
         end
     end
-
     //-----{In2输入}end
 
     //-----{从触摸屏获取输入}end
@@ -223,33 +222,13 @@ output ct_rstn
     //-----{输出到触摸屏显示}begin
     //根据需要显示的数修改此小节，
     //触摸屏上共有 44 块显示区域，可显示 44 组 32 位数据
+    //由于此限制，我们的2048位输出不能输出完全，因此只显示前1024位
 
-    reg [2047:0] display    = 2048'd0;
+    reg [2047:0] display;
 
     parameter state1 = "IN1";
     parameter state2 = "IN2";
     parameter state3 = "OUT";
-
-    //根据input_which选择输出
-    always @(posedge clk or negedge resetn) 
-    begin
-        if (!resetn)
-        begin
-            display <= 2048'd0;
-        end
-        else if (switch == 0)
-        begin
-            case (input_which)
-                0: display <= In1;
-                1: display <= In2;
-                default: display <= 2048'd0;
-            endcase
-        end
-        else
-        begin
-            display <= Out;
-        end
-    end
 
     //44 块显示区域从 1 开始编号，编号为 1~44，
     always @(posedge clk)
@@ -478,13 +457,13 @@ output ct_rstn
         default :
         begin
             display_valid <= 1'b0;
-            display_name <= 40'd0;
             display_value <= 32'd0;
         end
         endcase
     end
 
-    always @(posedge clk) 
+    //修改文字提示
+    always @(posedge clk)
     begin
         if (switch == 1)
         begin
@@ -497,6 +476,28 @@ output ct_rstn
         else
         begin
             display_name <= state2;
+        end
+    end
+
+    initial 
+    begin
+        display = In1;    
+    end
+
+    //改变触摸屏的输入信号
+    always @(switch or input_which) 
+    begin
+        if (switch == 1)
+        begin
+            display <= Out[1024:1];
+        end
+        else if (input_which == 0)
+        begin
+            display <= In1;
+        end
+        else
+        begin
+            display <= In2;
         end
     end
 

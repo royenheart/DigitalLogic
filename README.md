@@ -3,8 +3,8 @@
 ## 现有项目
 
 1. 1024BitsLargeMultiplication
-- 1024位二进制大数乘法，仍在测试完善中  
-2. G_ALU32 - 门级设计32位ALU
+- 1024位二进制大数乘法，上板测试成功
+1. G_ALU32 - 门级设计32位ALU
 - 功能已实现，上板测试成功
 3. ALU32 - RTL设计32位ALU
 - 功能已实现，测试成功
@@ -14,10 +14,6 @@
 - fpga型号：xc7a200tfbg676-2  
 - 实验箱型号：LS-CPU-EXB-002  
 - 制造厂商：[龙芯中科](https://www.loongson.cn/)
-
-## TODO
-
-- 使用Verilog实现1024位大数乘法，并正确搭载在fpga上
 
 ## 文档结构
 
@@ -37,6 +33,7 @@ DigitalLogic
 ├─Module - 模块文件
 │  ├─1024BitsLargeMultiplication
 │  │  ├─Algorithm
+│  │  ├─MulTest
 │  │  └─Display
 │  ├─ALU32
 │  │  ├─AdderModule
@@ -51,6 +48,7 @@ DigitalLogic
 │      └─TruncatedModule
 ├─Schematic - 电路图解
 │  ├─ImplementationSchematic - Implementation阶段电路图解
+│  │  ├─1024BitsLargeMultiplication
 │  │  ├─ALU32
 │  │  └─G_ALU32
 │  ├─RtlSchematic - Rtl阶段电路图解
@@ -58,6 +56,7 @@ DigitalLogic
 │  │  ├─ALU32
 │  │  └─G_ALU32
 │  └─SynthesisSchematic - Synthesis阶段电路图解
+│      ├─1024BitsLargeMultiplication
 │      ├─ALU32
 │      └─G_ALU32
 ├─Sim - TestBench文件
@@ -69,6 +68,7 @@ DigitalLogic
 │  └─G_ALU32
 ├─Timing - 时延数据
 │  ├─ImplementationTiming - Implementation时延数据
+│  │  ├─1024BitsLargeMultiplication
 │  │  ├─ALU32
 │  │  └─G_ALU32
 │  └─SynthesisTiming - Synthesis时延数据
@@ -76,6 +76,7 @@ DigitalLogic
 │      ├─ALU32
 │      └─G_ALU32
 └─WaveFormConfigFile - 输入输出波形图
+    ├─1024BitsLargeMultiplication
     ├─ALU32
     └─G_ALU32
 ```

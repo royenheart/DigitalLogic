@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
+// Engineer: 谢皓泽
 // 
 // Create Date: 
 // Design Name: 
@@ -10,7 +10,10 @@
 // Target Devices: 
 // Tool Versions: 
 // Description: 
-// 
+// 并行乘法器验证模块，
+// 因为并行乘法器模块本身输入输出端口过大导致无法正确综合
+// 因此套了一层模块解决这个问题
+// 数据初始给定
 // Dependencies: 
 // 
 // Revision:
@@ -36,6 +39,8 @@ module Test_Parallel (
         In2 = 1024'd44;
     end
 
+    //为保证输入输出不超出硬件范围
+    //只选取小数据进行简单的运算和功能、时序验证
     assign t2 = Out[255:0];
 
     ParallelMul test_pa (

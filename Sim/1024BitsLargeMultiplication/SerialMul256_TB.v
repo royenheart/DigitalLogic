@@ -1,16 +1,16 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 
+// Engineer: 谢皓泽、李文凯
 // 
 // Create Date: 
 // Design Name: 
-// Module Name: 
+// Module Name: SerialMul256 
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
 // Description: 
-// 
+// 256位单元并行乘法器Testbench
 // Dependencies: 
 // 
 // Revision:
@@ -47,12 +47,12 @@ begin
 end
 
 SerialMul256  u_SerialMul256 (
-    .In1                     ( In1   ),
-    .In2                     ( In2   ),
-    .clk                     ( clk   ),
-    .rstn                    ( rstn  ),
+    .In1                     (In1),
+    .In2                     (In2),
+    .clk                     (clk),
+    .rstn                    (rstn),
 
-    .Out                     ( Out   )
+    .Out                     (Out)
 );
 
 endmodule
