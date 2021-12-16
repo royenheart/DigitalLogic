@@ -2,8 +2,8 @@
 # Webtalk v2021.1 (64-bit)
 # SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
 # IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
-# Start of session at: Tue Dec  7 10:41:48 2021
-# Process ID: 18044
+# Start of session at: Fri Dec 10 20:45:41 2021
+# Process ID: 17056
 # Current directory: D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.sim/Test_Parallel_TB/behav/xsim
 # Command line: wbtcv.exe -mode batch -source D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.sim/Test_Parallel_TB/behav/xsim/xsim.dir/Test_Parallel_TB_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.sim/Test_Parallel_TB/behav/xsim/webtalk.log

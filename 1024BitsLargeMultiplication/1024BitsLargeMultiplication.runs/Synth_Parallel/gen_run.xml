@@ -3,8 +3,6 @@
   <File Type="PA-TCL" Name="IO_ParallelMul.tcl"/>
   <File Type="REPORTS-TCL" Name="IO_ParallelMul_reports.tcl"/>
   <File Type="RDS-RDS" Name="IO_ParallelMul.vds"/>
-  <File Type="RDS-UTIL" Name="IO_ParallelMul_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="IO_ParallelMul_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="IO_ParallelMul.dcp"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>

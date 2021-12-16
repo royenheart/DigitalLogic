@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Dec 16 16:25:47 2021
+# Process ID: 14820
+# Current directory: D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.runs/Synth_Wallace
+# Command line: vivado.exe -log wallaceAdder_32.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source wallaceAdder_32.tcl
+# Log file: D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.runs/Synth_Wallace/wallaceAdder_32.vds
+# Journal file: D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.runs/Synth_Wallace\vivado.jou
+#-----------------------------------------------------------
+source wallaceAdder_32.tcl -notrace

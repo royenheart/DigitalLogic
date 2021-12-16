@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="Impl_Parallel" LaunchPart="xc7a200tfbg676-2" LaunchTime="1638907889">
-  <File Type="ROUTE-PWR" Name="IO_ParallelMul_power_routed.rpt"/>
   <File Type="PA-TCL" Name="IO_ParallelMul.tcl"/>
-  <File Type="ROUTE-PWR-SUM" Name="IO_ParallelMul_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="IO_ParallelMul_reports.tcl"/>
   <File Type="BITSTR-MSK" Name="IO_ParallelMul.msk"/>
-  <File Type="ROUTE-CLK" Name="IO_ParallelMul_clock_utilization_routed.rpt"/>
   <File Type="RDI-RDI" Name="IO_ParallelMul.vdi"/>
   <File Type="BG-BIT" Name="IO_ParallelMul.bit"/>
   <File Type="BG-DRC" Name="IO_ParallelMul.drc"/>
@@ -15,32 +12,16 @@
   <File Type="BITSTR-NKY" Name="IO_ParallelMul.nky"/>
   <File Type="BITSTR-BMM" Name="IO_ParallelMul_bd.bmm"/>
   <File Type="BITSTR-MMI" Name="IO_ParallelMul.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="IO_ParallelMul_methodology_drc_routed.rpt"/>
   <File Type="BITSTR-SYSDEF" Name="IO_ParallelMul.sysdef"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
   <File Type="BITSTR-LTX" Name="IO_ParallelMul.ltx"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
-  <File Type="OPT-DRC" Name="IO_ParallelMul_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="IO_ParallelMul.hwdef"/>
-  <File Type="PLACE-IO" Name="IO_ParallelMul_io_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="IO_ParallelMul_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="IO_ParallelMul_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="IO_ParallelMul_control_sets_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="IO_ParallelMul_incremental_reuse_pre_placed.rpt"/>
-  <File Type="ROUTE-DRC" Name="IO_ParallelMul_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="IO_ParallelMul_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="IO_ParallelMul_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="IO_ParallelMul_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="IO_ParallelMul_route_status.pb"/>
   <File Type="ROUTE-DCP" Name="IO_ParallelMul_routed.dcp"/>
   <File Type="ROUTE-ERROR-DCP" Name="IO_ParallelMul_routed_error.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="IO_ParallelMul_routed_bb.dcp"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="IO_ParallelMul_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="IO_ParallelMul_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="IO_ParallelMul_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-BUS-SKEW" Name="IO_ParallelMul_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="IO_ParallelMul_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="IO_ParallelMul_bus_skew_routed.rpx"/>
   <File Type="OPT-DCP" Name="IO_ParallelMul_opt.dcp"/>
   <File Type="PLACE-DCP" Name="IO_ParallelMul_placed.dcp"/>
   <File Type="PWROPT-DCP" Name="IO_ParallelMul_pwropt.dcp"/>
@@ -48,9 +29,6 @@
   <File Type="PHYSOPT-DCP" Name="IO_ParallelMul_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="IO_ParallelMul_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="IO_ParallelMul_postroute_physopt_bb.dcp"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="IO_ParallelMul_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-DRC-RPX" Name="IO_ParallelMul_drc_routed.rpx"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="IO_ParallelMul_methodology_drc_routed.rpx"/>
   <File Type="PDI-FILE" Name="IO_ParallelMul.pdi"/>
   <File Type="RCFI_FILE" Name="IO_ParallelMul.rcfi"/>
   <File Type="CFI_FILE" Name="IO_ParallelMul.cfi"/>

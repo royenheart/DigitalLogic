@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../Module/1024BitsLargeMultiplication/Algorithm/SerialMul32.v" \
+"../../../../../Module/1024BitsLargeMultiplication/WallaceMul/csa.v" \
+"../../../../../Module/1024BitsLargeMultiplication/WallaceMul/full_add.v" \
+"../../../../../Module/1024BitsLargeMultiplication/WallaceMul/rca.v" \
+"../../../../../Module/1024BitsLargeMultiplication/WallaceMul/wallaceAdder_32.v" \
+"../../../../../Sim/1024BitsLargeMultiplication/wallaceAdder_32_TB.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

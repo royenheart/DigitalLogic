@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="wallaceAdder_32_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="wallaceAdder_32_TB" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="9,166.666 ns"></ZoomStartTime>
+      <ZoomEndTime time="10,166.667 ns"></ZoomEndTime>
+      <Cursor1Time time="9,170.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="340"></NameColumnWidth>
+      <ValueColumnWidth column_width="155"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="6" />
+   <wvobject fp_name="/wallaceAdder_32_TB/In1" type="array">
+      <obj_property name="ElementShortName">In1[1023:0]</obj_property>
+      <obj_property name="ObjectShortName">In1[1023:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/wallaceAdder_32_TB/In2" type="array">
+      <obj_property name="ElementShortName">In2[1023:0]</obj_property>
+      <obj_property name="ObjectShortName">In2[1023:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/wallaceAdder_32_TB/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/wallaceAdder_32_TB/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/wallaceAdder_32_TB/Out" type="array">
+      <obj_property name="ElementShortName">Out[2047:0]</obj_property>
+      <obj_property name="ObjectShortName">Out[2047:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/wallaceAdder_32_TB/PERIOD" type="array">
+      <obj_property name="ElementShortName">PERIOD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PERIOD[31:0]</obj_property>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigitalLogic/Module/1024BitsLargeMultiplication/Algorithm/SerialMul32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SerialMul32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigitalLogic/Module/1024BitsLargeMultiplication/WallaceMul/csa.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module csa
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigitalLogic/Module/1024BitsLargeMultiplication/WallaceMul/full_add.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_add
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigitalLogic/Module/1024BitsLargeMultiplication/WallaceMul/rca.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rca
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigitalLogic/Module/1024BitsLargeMultiplication/WallaceMul/wallaceAdder_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wallaceAdder_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigitalLogic/Sim/1024BitsLargeMultiplication/wallaceAdder_32_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module wallaceAdder_32_TB

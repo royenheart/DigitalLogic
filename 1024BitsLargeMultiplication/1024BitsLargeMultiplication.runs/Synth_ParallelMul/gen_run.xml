@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="Synth_ParallelMul" LaunchPart="xc7a200tfbg676-2" LaunchTime="1638970074">
   <File Type="PA-TCL" Name="ParallelMul.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="ParallelMul_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="ParallelMul_reports.tcl"/>
   <File Type="RDS-RDS" Name="ParallelMul.vds"/>
-  <File Type="RDS-UTIL" Name="ParallelMul_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="ParallelMul_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="ParallelMul.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="ParallelMul_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="ParallelMul_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../Module/1024BitsLargeMultiplication/Algorithm/SerialMul256.v">

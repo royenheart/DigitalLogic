@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="Synth_Serial" LaunchPart="xc7a200tfbg676-2" LaunchTime="1638971237">
   <File Type="PA-TCL" Name="SerialMul.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="SerialMul_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="SerialMul_reports.tcl"/>
   <File Type="RDS-RDS" Name="SerialMul.vds"/>
-  <File Type="RDS-UTIL" Name="SerialMul_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="SerialMul_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="SerialMul.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="SerialMul_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="SerialMul_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/1024BitsLargeMultiplication/Algorithm/SerialMul.v">
