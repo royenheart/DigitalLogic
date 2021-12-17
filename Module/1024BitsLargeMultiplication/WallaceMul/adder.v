@@ -5,7 +5,7 @@
 // 
 // Create Date: 2021/12/10 09:22:40
 // Design Name: 
-// Module Name: add4
+// Module Name: adder
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 

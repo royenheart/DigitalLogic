@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="Synth_Wallace_Direct" LaunchPart="xc7a200tfbg676-2" LaunchTime="1639645406">
   <File Type="PA-TCL" Name="wallaceAdder_32_Direct.tcl"/>
-  <File Type="RDS-PROPCONSTRS" Name="wallaceAdder_32_Direct_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="wallaceAdder_32_Direct_reports.tcl"/>
   <File Type="RDS-RDS" Name="wallaceAdder_32_Direct.vds"/>
   <File Type="RDS-UTIL" Name="wallaceAdder_32_Direct_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="wallaceAdder_32_Direct_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="wallaceAdder_32_Direct.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="wallaceAdder_32_Direct_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="wallaceAdder_32_Direct_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/../Module/1024BitsLargeMultiplication/Algorithm/SerialMul32.v">
@@ -218,9 +215,7 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2021"/>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>
