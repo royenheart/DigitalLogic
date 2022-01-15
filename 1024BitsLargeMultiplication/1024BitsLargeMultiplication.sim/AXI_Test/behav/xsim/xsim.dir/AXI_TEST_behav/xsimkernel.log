@@ -1,0 +1,7 @@
+Running: xsim.dir/AXI_TEST_behav/xsimk.exe -simmode gui -wdb AXI_TEST_behav.wdb -simrunnum 0 -socket 6392
+Design successfully loaded
+Design Loading Memory Usage: 7100 KB (Peak: 7100 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 7792 KB (Peak: 7792 KB)
+Simulation CPU Usage: 31 ms

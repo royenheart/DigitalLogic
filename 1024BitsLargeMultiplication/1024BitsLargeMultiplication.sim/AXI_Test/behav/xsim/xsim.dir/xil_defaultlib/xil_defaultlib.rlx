@@ -1,0 +1,8 @@
+0.7
+2020.2
+Oct 19 2021
+03:16:22
+D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.sim/AXI_Test/behav/xsim/glbl.v,1634335545,verilog,,,,glbl,,,,,,,,
+D:/DigitalLogic/Module/1024BitsLargeMultiplication/Algorithm/ParallelMul.v,1638952870,verilog,,D:/DigitalLogic/Module/1024BitsLargeMultiplication/Algorithm/SerialMul256.v,,ParallelMul,,,,,,,,
+D:/DigitalLogic/Module/1024BitsLargeMultiplication/Algorithm/SerialMul256.v,1639537867,verilog,,D:/DigitalLogic/Sim/1024BitsLargeMultiplication/AXI_TEST.v,,SerialMul256,,,,,,,,
+D:/DigitalLogic/Sim/1024BitsLargeMultiplication/AXI_TEST.v,1640235599,verilog,,,,AXI_TEST,,,,,,,,
