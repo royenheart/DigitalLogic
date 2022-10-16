@@ -2,8 +2,19 @@
 
 *.zip
 *.sch
+*.exe
+*.o
 
 # exclude folder
 
+WaveFormConfigFile
+Timing
+Schematic
+Draft
 .vscode/*
-1024BitsLargeMultiplication/1024BitsLargeMultiplication.sim/wallace_mul1024/*
+
+# project folder
+
+1024BitsLargeMultiplication
+ALU32
+G_ALU32

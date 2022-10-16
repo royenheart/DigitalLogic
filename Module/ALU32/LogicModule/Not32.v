@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 袁文斌
+// Engineer: Wenbin Yuan
 // 
 // Create Date: 2021/10/28 15:24:19
 // Design Name: 

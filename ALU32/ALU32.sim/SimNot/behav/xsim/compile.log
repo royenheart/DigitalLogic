@@ -1,6 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/Module/ALU32/Not32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Not32
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/Sim/ALU32/Not32_TB.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Not32_TB
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/ALU32/ALU32.sim/SimNot/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl

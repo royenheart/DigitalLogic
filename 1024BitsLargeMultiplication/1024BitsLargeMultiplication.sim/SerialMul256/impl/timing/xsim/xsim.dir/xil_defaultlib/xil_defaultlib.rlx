@@ -1,8 +1,0 @@
-0.7
-2020.2
-Jun 10 2021
-20:04:57
-D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.sim/SerialMul256/impl/timing/xsim/SerialMul256_TB_time_impl.v,1638886067,verilog,,D:/DigitalLogic/Module/1024BitsLargeMultiplication/Algorithm/Count256.v,,Test_Parallel;glbl,,,,,,,,
-D:/DigitalLogic/Module/1024BitsLargeMultiplication/Algorithm/Count256.v,1638879615,verilog,,D:/DigitalLogic/Module/1024BitsLargeMultiplication/Algorithm/SerialMul256.v,,Count256,,,,,,,,
-D:/DigitalLogic/Module/1024BitsLargeMultiplication/Algorithm/SerialMul256.v,1638879639,verilog,,D:/DigitalLogic/Sim/1024BitsLargeMultiplication/SerialMul256_TB.v,,SerialMul256,,,,,,,,
-D:/DigitalLogic/Sim/1024BitsLargeMultiplication/SerialMul256_TB.v,1638880833,verilog,,,,SerialMul256_TB,,,,,,,,

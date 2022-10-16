@@ -1,7 +1,0 @@
-Running: xsim.dir/G_ALU32_v2_TB_behav/xsimk.exe -simmode gui -wdb G_ALU32_v2_TB_behav.wdb -simrunnum 0 -socket 11460
-Design successfully loaded
-Design Loading Memory Usage: 7644 KB (Peak: 7644 KB)
-Design Loading CPU Usage: 15 ms
-Simulation completed
-Simulation Memory Usage: 8872 KB (Peak: 8872 KB)
-Simulation CPU Usage: 30 ms

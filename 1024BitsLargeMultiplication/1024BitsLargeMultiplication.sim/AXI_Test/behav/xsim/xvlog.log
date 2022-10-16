@@ -1,6 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigitalLogic/Module/1024BitsLargeMultiplication/Algorithm/ParallelMul.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module ParallelMul
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigitalLogic/Module/1024BitsLargeMultiplication/Algorithm/SerialMul256.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module SerialMul256
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigitalLogic/Sim/1024BitsLargeMultiplication/AXI_TEST.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module AXI_TEST

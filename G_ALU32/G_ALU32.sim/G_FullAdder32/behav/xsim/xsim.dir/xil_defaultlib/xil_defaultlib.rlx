@@ -1,8 +1,0 @@
-0.7
-2020.2
-Jun 10 2021
-20:04:57
-D:/DigtalLogic/G_ALU32/G_ALU32.sim/G_FullAdder32/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,,,,,,,
-D:/DigtalLogic/Module/ALU32_GATE/G_FullAdder32.v,1635607150,verilog,,D:/DigtalLogic/Module/ALU32_GATE/G_FullAdder4.v,,G_FullAdder32,,,,,,,,
-D:/DigtalLogic/Module/ALU32_GATE/G_FullAdder4.v,1635677793,verilog,,D:/DigtalLogic/Sim/ALU32_GATE/G_FullAdder32_TB.v,,G_FullAdder4,,,,,,,,
-D:/DigtalLogic/Sim/ALU32_GATE/G_FullAdder32_TB.v,1635677224,verilog,,,,G_FullAdder32_TB,,,,,,,,

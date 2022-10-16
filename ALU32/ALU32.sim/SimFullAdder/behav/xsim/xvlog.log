@@ -1,6 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/Module/ALU32/FullAdder32.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FullAdder32
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/Sim/ALU32/FullAdder32_TB.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module FullAdder32_TB
-INFO: [VRFC 10-2263] Analyzing Verilog file "D:/DigtalLogic/ALU32/ALU32.sim/SimFullAdder/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl

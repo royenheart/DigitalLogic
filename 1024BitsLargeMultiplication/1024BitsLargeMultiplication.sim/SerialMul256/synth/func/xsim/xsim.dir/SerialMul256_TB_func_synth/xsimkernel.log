@@ -1,7 +1,0 @@
-Running: xsim.dir/SerialMul256_TB_func_synth/xsimk.exe -simmode gui -wdb SerialMul256_TB_func_synth.wdb -simrunnum 0 -socket 7287
-Design successfully loaded
-Design Loading Memory Usage: 40388 KB (Peak: 40388 KB)
-Design Loading CPU Usage: 93 ms
-Simulation completed
-Simulation Memory Usage: 46872 KB (Peak: 46872 KB)
-Simulation CPU Usage: 1343 ms

@@ -1,7 +1,0 @@
-Running: xsim.dir/G_Shi1_TB_behav/xsimk.exe -simmode gui -wdb G_Shi1_TB_behav.wdb -simrunnum 0 -socket 10579
-Design successfully loaded
-Design Loading Memory Usage: 6796 KB (Peak: 6796 KB)
-Design Loading CPU Usage: 0 ms
-Simulation completed
-Simulation Memory Usage: 7448 KB (Peak: 7448 KB)
-Simulation CPU Usage: 0 ms

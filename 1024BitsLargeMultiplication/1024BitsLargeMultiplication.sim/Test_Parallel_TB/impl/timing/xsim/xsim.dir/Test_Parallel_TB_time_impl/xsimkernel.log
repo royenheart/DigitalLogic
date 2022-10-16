@@ -1,7 +1,0 @@
-Running: xsim.dir/Test_Parallel_TB_time_impl/xsimk.exe -simmode gui -wdb Test_Parallel_TB_time_impl.wdb -simrunnum 0 -socket 5281
-Design successfully loaded
-Design Loading Memory Usage: 19352 KB (Peak: 19352 KB)
-Design Loading CPU Usage: 31 ms
-Simulation completed
-Simulation Memory Usage: 23496 KB (Peak: 23496 KB)
-Simulation CPU Usage: 25702 ms

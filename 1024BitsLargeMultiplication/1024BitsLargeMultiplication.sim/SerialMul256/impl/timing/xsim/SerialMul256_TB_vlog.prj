@@ -1,9 +1,0 @@
-# compile verilog/system verilog design source files
-verilog xil_defaultlib  \
-"SerialMul256_TB_time_impl.v" \
-"../../../../../../Module/1024BitsLargeMultiplication/Algorithm/Count256.v" \
-"../../../../../../Module/1024BitsLargeMultiplication/Algorithm/SerialMul256.v" \
-"../../../../../../Sim/1024BitsLargeMultiplication/SerialMul256_TB.v" \
-
-# Do not sort compile order
-nosort

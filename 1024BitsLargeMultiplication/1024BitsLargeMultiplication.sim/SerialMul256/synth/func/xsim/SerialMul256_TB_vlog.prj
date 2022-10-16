@@ -1,7 +1,0 @@
-# compile verilog/system verilog design source files
-verilog xil_defaultlib  \
-"SerialMul256_TB_func_synth.v" \
-"../../../../../../Sim/1024BitsLargeMultiplication/SerialMul256_TB.v" \
-
-# Do not sort compile order
-nosort

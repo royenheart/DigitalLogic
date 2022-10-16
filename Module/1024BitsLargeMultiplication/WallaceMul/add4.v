@@ -1,11 +1,11 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
-// Engineer: 李文凯
+// Engineer: Wenkai Li
 // 
 // Create Date: 2021/12/10 09:22:40
 // Design Name: 
-// Module Name: add4
+// Module Name: add4.v
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -25,8 +25,7 @@ module add4(
     input b,
     input cin,
     output s,
-    output cout
-);
+    output cout);
     
     assign {cout, s} = a + b + cin;
     

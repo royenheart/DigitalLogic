@@ -1,9 +1,0 @@
-0.7
-2020.2
-Jun 10 2021
-20:04:57
-D:/DigitalLogic/1024BitsLargeMultiplication/1024BitsLargeMultiplication.sim/ParallelMul_TB/behav/xsim/glbl.v,1623370582,verilog,,,,glbl,,,,,,,,
-D:/DigitalLogic/Module/1024BitsLargeMultiplication/Algorithm/Count256.v,1638879615,verilog,,D:/DigitalLogic/Module/1024BitsLargeMultiplication/Algorithm/ParallelMul.v,,Count256,,,,,,,,
-D:/DigitalLogic/Module/1024BitsLargeMultiplication/Algorithm/ParallelMul.v,1638889862,verilog,,D:/DigitalLogic/Module/1024BitsLargeMultiplication/Algorithm/SerialMul256.v,,ParallelMul,,,,,,,,
-D:/DigitalLogic/Module/1024BitsLargeMultiplication/Algorithm/SerialMul256.v,1638879639,verilog,,D:/DigitalLogic/Sim/1024BitsLargeMultiplication/ParallelMul_TB.v,,SerialMul256,,,,,,,,
-D:/DigitalLogic/Sim/1024BitsLargeMultiplication/ParallelMul_TB.v,1638852759,verilog,,,,ParallelMul_TB,,,,,,,,
