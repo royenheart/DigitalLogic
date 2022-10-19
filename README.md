@@ -19,17 +19,10 @@
 
 ```shell
 DigitalLogic
-├─1024BitsLargeMultiplication - RTL级设计1024位二进制大数乘法
-│  └─1024BitsLargeMultiplication.xpr
-├─ALU32 - RTL设计32位ALU项目信息配置
-│  └─ALU32.xpr
 ├─Constraints - 管脚约束文件
 │  ├─1024BitsLargeMultiplication
 │  ├─ALU32
 │  └─G_ALU32
-├─Draft - 弃用模块，草稿箱
-├─G_ALU32 - 门级设计32位ALU项目信息配置
-│  └─G_ALU32.xpr
 ├─Module - 模块文件
 │  ├─1024BitsLargeMultiplication
 │  │  ├─Algorithm
@@ -46,48 +39,21 @@ DigitalLogic
 │      ├─ShifterModule
 │      │  └─G_ShifterDig
 │      └─TruncatedModule
-├─Schematic - 电路图解
-│  ├─ImplementationSchematic - Implementation阶段电路图解
-│  │  ├─1024BitsLargeMultiplication
-│  │  ├─ALU32
-│  │  └─G_ALU32
-│  ├─RtlSchematic - Rtl阶段电路图解
-│  │  ├─1024BitsLargeMultiplication
-│  │  ├─ALU32
-│  │  └─G_ALU32
-│  └─SynthesisSchematic - Synthesis阶段电路图解
-│      ├─1024BitsLargeMultiplication
-│      ├─ALU32
-│      └─G_ALU32
 ├─Sim - TestBench文件
 │  ├─1024BitsLargeMultiplication
 │  ├─ALU32
 │  └─ALU32_GATE
-├─TestData - 测试数据集
-│  ├─ALU32
-│  └─G_ALU32
-├─Timing - 时延数据
-│  ├─ImplementationTiming - Implementation时延数据
-│  │  ├─1024BitsLargeMultiplication
-│  │  ├─ALU32
-│  │  └─G_ALU32
-│  └─SynthesisTiming - Synthesis时延数据
-│      ├─1024BitsLargeMultiplication
-│      ├─ALU32
-│      └─G_ALU32
-└─WaveFormConfigFile - 输入输出波形图
-    ├─1024BitsLargeMultiplication
-    ├─ALU32
-    └─G_ALU32
+└─TestData - 测试数据集
+   ├─ALU32
+   └─G_ALU32
 ```
 
 ## 如何运行
 
 - 安装[vivado](https://www.xilinx.com/products/design-tools/vivado.html)
-- 获取项目文件
-- 于vivado中打开对应项目的配置信息文件(xxx.xpr)
+- 自行配置项目，添加相应文件进行测试
 - 推荐使用vscode作为verilog文件的编辑器
-- TestBench若打开数据文件时遇到路径问题，请根据运行机的环境配置路径
+- 测试文件若在读取数据时遇到路径问题，请根据运行机的环境配置路径
 
 ## 额外说明
 
